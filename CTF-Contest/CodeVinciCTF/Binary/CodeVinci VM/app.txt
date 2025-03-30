@@ -1,0 +1,86 @@
+from flask import Flask, render_template, request, redirect, url_for, make_response
+from flask_bootstrap import Bootstrap
+
+import os
+import re
+import jwt
+import datetime
+
+from vm import CodeVinciVM
+
+app = Flask(__name__)
+Bootstrap(app)
+
+UPLOAD_FOLDER = 'uploads'
+ALLOWED_EXTENSIONS = {'cv'}
+
+app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
+
+def allowed_file(filename):
+return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
+
+def create_token(authenticated=False):
+payload = {
+'authenticated': authenticated,
+'exp': datetime.datetime.utcnow() + datetime.timedelta(hours=1)
+}
+
+return jwt.encode(payload, None, algorithm='none')
+
+def verify_token(token):
+try:
+decoded = jwt.decode(token, options={"verify_signature": False})
+
+return decoded.get('authenticated', False)
+
+except jwt.ExpiredSignatureError:
+return False
+
+except jwt.InvalidTokenError:
+return False
+
+def simple_proxy(output):
+flag_pattern = r"CodeVinciCTF\{[A-Za-z0-9_]+\}"
+emoji = "🚩"
+
+return re.sub(flag_pattern, emoji, output)
+
+@app.route('/', methods=['GET', 'POST'])
+def index():
+token = request.cookies.get('auth_token')
+is_authenticated = verify_token(token) if token else False
+
+output = ''
+if request.method == 'POST':
+if 'file' not in request.files:
+
+return redirect(request.url)
+
+file = request.files['file']
+if file and allowed_file(file.filename):
+filename = os.path.join(app.config['UPLOAD_FOLDER'], file.filename)
+file.save(filename)
+
+vm = CodeVinciVM()
+
+program = vm.load_program(filename)
+output = vm.run(program)
+if not is_authenticated:
+output = simple_proxy(output)
+
+response = make_response(render_template('index.html', output=output, authenticated=is_authenticated))
+response.set_cookie('auth_token', create_token(authenticated=is_authenticated), httponly=True, secure=False)
+
+return response
+
+@app.route('/logout')
+def logout():
+response = make_response(redirect(url_for('index')))
+response.set_cookie('auth_token', '', expires=0)
+return response
+
+if __name__ == '__main__':
+if not os.path.exists(UPLOAD_FOLDER):
+os.makedirs(UPLOAD_FOLDER)
+
+app.run(host='0.0.0.0', port=8888)
