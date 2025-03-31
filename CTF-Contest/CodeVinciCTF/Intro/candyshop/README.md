@@ -6,9 +6,9 @@ Existe una condicional que nos impide poner numeros negativos sin embargo, si ab
 de rango de memoria podemos insertar como valor:
 
 ---
-Maximo entero = 2147483647
-Mimino entero = 2147483649 (-2147483647)
-Valor = (2147483649 + 2147483647) - 100
+- Maximo entero = 2147483647
+- Mimino entero = 2147483649 (-2147483647)
+- Valor = (2147483649 + 2147483647) - 100
 ---
 
 
