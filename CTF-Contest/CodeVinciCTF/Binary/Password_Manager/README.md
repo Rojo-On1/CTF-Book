@@ -10,5 +10,4 @@ Ahora al revisarlo podemos ver la contrasena para entrar al binario
 ```
 CiaoSonoBenjaminQuestaPasswordNonLaVedraiMai
 ```
-Obteniendo la flag
-[FLAG](https://github.com/Rojo-On1/CTF-Book/blob/main/CTF-Contest/CodeVinciCTF/Binary/Password_Manager/images/flag.png)
+Obteniendo la [flag](https://github.com/Rojo-On1/CTF-Book/blob/main/CTF-Contest/CodeVinciCTF/Binary/Password_Manager/images/flag.png)
