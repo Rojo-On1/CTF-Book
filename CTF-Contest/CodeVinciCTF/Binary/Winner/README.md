@@ -3,5 +3,6 @@ Vemos una funcion que al comparar un valor aleatorio con el nombre ejecuta cat f
 Empezamos revisando el binario con ltrace y al insertar 30 "a" vemos que podemos sobrescribir la 
 primera variable.
 Le adicionamos valores nulos hasta sobrescribir el siguiente registro obteniendo la FLAG
-
+```bash
 python -c "print('a'*30 + '\0'*32)" | ./winner
+```
