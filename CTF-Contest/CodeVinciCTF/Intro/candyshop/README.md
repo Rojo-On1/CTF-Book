@@ -11,5 +11,4 @@ de rango de memoria podemos insertar como valor:
 - Valor = (2147483649 + 2147483647) - 100
 ---
 
-
-Para conseguir asi el monto necesario y ver la flag
+Para conseguir asi el monto necesario y ver la [flag](https://github.com/Rojo-On1/CTF-Book/blob/main/CTF-Contest/CodeVinciCTF/Intro/candyshop/images/flag.png)
