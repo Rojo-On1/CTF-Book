@@ -1,9 +1,13 @@
-Si aplicamos el siguiente filtro a la captura podemos ver los siguiente:
-ip.src == 147.182.177.196 && icmp
+Crearemos un filtro para las trazas icmp exitosas:
+````
+icmp.type == 8
+````
 
-![imagen_pings](images/traza.png)
+luego en el wireshark agregamos una columna seq como se muestra en la siguiente imagen
+![imagen_pings](images/icmp.jpg)
 
-Si tomando el cuante el valor del seq extraemos el contenido vemos la flag:
+En el contenido de los paquetes vemos la flag:
+![imagen flag](images/flag.png)
 
 ```
 TexSAW{not_the_fake_one}
