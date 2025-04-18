@@ -1,7 +1,7 @@
-Reconocimiento y Enumeracion:
-1 - Se comienza con un escaneo de toda la red para obtener los ip disponibles.
-2 - Enumeramos todos los puertos de la ip obtenida. (22,80,443)
-3 - Lanzamos una serie de scripts basicos de reconocimiento.
+# Reconocimiento y Enumeracion:
+1. Se comienza con un escaneo de toda la red para obtener los ip disponibles.
+2. Enumeramos todos los puertos de la ip obtenida. (22,80,443)
+3. Lanzamos una serie de scripts basicos de reconocimiento.
 	- ping -c 1 [IP] 
 		Segun el ttl obtenemos el sistema, [linux m 64]
 	- nmap --script=http-enum [IP]
@@ -28,9 +28,9 @@ Reconocimiento y Enumeracion:
 				elliot:ER28-0652
 		Tenemos un posible usuario y contraseña.
 Analisis de Vulnerabilidades:
-4 - Ahora que tenemos credenciales y un login podemos probar entrar.
+4. Ahora que tenemos credenciales y un login podemos probar entrar.
 Explotacion de Vulnerabilidades:
-5 - Una vez en configuracion nos desplazamos a:
+5. Una vez en configuracion nos desplazamos a:
 	- Appearance	
 	 - Editor
 	  - 404.php
@@ -43,19 +43,19 @@ Ahora vamos al navegador y abrimos.
 	http://[IP]/1234 para que de error y se active el fichero y obtenemos una shell 
 
 Post-Explotacion:
-6 - Una vez dentro realizamos una tratamiento de la tty para mayor movilidad
+6. Una vez dentro realizamos una tratamiento de la tty para mayor movilidad
 	- script /dev/null -c /bin/bash
 	- export TERM=xterm
 	- export SHELL=/bin/bash
 	
-7 - Procedemos a enumerar el sistema:
+7. Procedemos a enumerar el sistema:
 	- whoami
 	Somos el usuario daemon, revisamos el directorio /home y entramos al directorio robot:
 		- key-2-of-3.txt
 		- password.raw-md5
 	Vemos que tenemos un archivo de texto pero no podemos abrir la flag y al revisarlo obtenemos:
 		robot:[hash]
-8 - Escalada de privilegios:
+8. Escalada de privilegios:
 	- Tenemos el usuario robot y su hash md5, intentamos crackear la contraseña en caso de ser debil
 	john --wordlist /usr/share/wordlist/rockyou.txt file.hash
 	- Luego de un rato obtenemos las credenciales.
