@@ -3,11 +3,11 @@ debemos, utilizando el script get_key obtenemos la llave que se utiliza para cif
 
 Luego utilizamos el decrypt.py y obtenemos la flag:
 
-'''
+```
 THEFLAGISWONTIMEPADWITHUNDERSCORESBETWEENWORDSWRAPPEDINTHEHEADER
 
 texsaw{WON_TIME_PAD}
-'''
+```
 
 
 
