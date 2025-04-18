@@ -1,7 +1,7 @@
 ## Analisis del Binario
 Tenemos un binario ejecutable de 64 bits con el NX desabilitado.
 
-![foto de el binario](/images/checksec.png)
+![foto de el binario](images/checksec.png)
 
 Al ejecutar el binario nos recibe con el siguiente mensaje, donde dependiendo nuestra respuesta se acontece un segmentation fault.
 
