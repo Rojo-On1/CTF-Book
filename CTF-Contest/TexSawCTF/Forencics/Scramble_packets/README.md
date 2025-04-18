@@ -5,6 +5,6 @@ ip.src == 147.182.177.196 && icmp
 
 Si tomando el cuante el valor del seq extraemos el contenido vemos la flag:
 
-'''
+```
 TexSAW{not_the_fake_one}
-'''
+```
