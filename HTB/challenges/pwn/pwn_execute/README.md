@@ -1,4 +1,4 @@
-## Analisis del Binario
+# Analisis del Binario
 Tenemos un binario ejecutable de 64 bits con el NX desabilitado.
 
 ![foto de el binario](images/checksec.png)
@@ -11,18 +11,18 @@ asd
 Hehe, told you... won't accept everything
 ```
 
-## Analisis del Codigo
+# Analisis del Codigo
 
 Al analizar el codigo vemos que los bytes que introduzcamos son interpretados pudiendo ejecutar instrucciones, sin embargo tambien 
 vemos presente una blacklist.
 
-## Explotacion
+# Explotacion
 
-# Creacion del shellcode
+### Creacion del shellcode
 Existen diversas herramientas en la web que nos permiten crear shellcodes, un ejemplo claro tenemos msfvenom, sin embargo la serie de
 limitantes que nos ocasiona la estructura del codigo hace dificil el uso de herramientas automatizadas, toca crearlo a mano.
 
-# Instrucciones en ASM-x64
+### Instrucciones en ASM-x64
 
 Como estamos en presencia de un binario de 64 bits, nuestro objetivo sera leer el archivo flag.txt, vamos a crearlo.
 
@@ -66,7 +66,7 @@ _start:
     syscall
 ```
 
-*Nota: Puedes descargar el archivo sin comentarios [aqui](/exploit/shellcode.asm)*
+*Nota: Puedes descargar el archivo sin comentarios [aqui](exploit/shellcode.asm)*
 
 Una vez listo, debemos ver si no contiene Null bytes y ninguno de los badchars (si seguiste la guia puedes seguir con normalidad).
 Compilamos el binario con los siguientes comandos:
@@ -77,7 +77,7 @@ ld shellcode.o -o shell
 ```
 Lo ejecutamos para comprobar que todo este bien...
 
-# Generacion del shellcode
+### Generacion del shellcode
 Gracias a la siguiente funcion que tengo programada en mi zshrc se puede exctraer el shell code con facilidad.
 
 ```bash
@@ -90,7 +90,7 @@ Lo copiamos y vamos a la explotacion.
 
 *Puedes agregarlo a tu zsh en la ultima linea*
 
-# Explotacion
+### Explotacion
 Una vez tengamos el shellcode debemos explotar el binario.
 
 ```bash
@@ -100,8 +100,11 @@ echo -n <shellcode> | ./execute
 ![flag](images/flag.png)
 
 Y listo...
-*Nota: [Aqui](/exploit/exploit.py) adjunto una herramienta para la explotacion automatizada*
+*Nota: [Aqui](exploit/exploit.py) adjunto una herramienta para la explotacion automatizada*
 
+### Referencias
+Para profundizar mas el tema consulte:
+- https://bista.sites.dmi.unipg.it/didattica/sicurezza-pg/buffer-overrun/hacking-book/0x2a0-writing_shellcode.html
 
 
 
