@@ -1,0 +1,12 @@
+services:
+    vibe-coding:
+        container_name: vibe-coding-1b6a56fb3155a51126d33a6cd15aa26d
+        build:
+            dockerfile: ./Dockerfile
+            context: .
+        logging:
+            driver: "json-file"
+        restart: always
+        ports:
+            - "1337:1337"
+        privileged: true
