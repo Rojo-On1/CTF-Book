@@ -10,4 +10,4 @@ Plataformas:
 
 - [CodeVincyCTF 2025](https://github.com/Rojo-On1/CTF-Book/tree/main/CTF-Contest/CodeVinciCTF)
 - [TexSawCTF 2025](https://github.com/Rojo-On1/CTF-Book/tree/main/CTF-Contest/TexSawCTF)
-- [B01leCTF 2025](https://github.com/Rojo-0n1/CTF-Book/tree/main/CTF-Contest/B01leCTF)
+- [B01lerCTF 2025](https://github.com/Rojo-On1/CTF-Book/tree/main/CTF-Contest/B01leCTF)
