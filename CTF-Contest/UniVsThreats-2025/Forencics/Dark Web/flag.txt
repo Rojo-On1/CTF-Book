@@ -1,0 +1,2 @@
+b1,r,lsb,xy         .. b1,r,msb,xy         .. b1,g,lsb,xy         .. b1,g,msb,xy         .. b1,b,lsb,xy         .. text: "UVT{4_l0T_0f_lay3r5_70_unc0v3r_1nn1t?}"
+b4,g,msb,xY,prime   .. b4,b,lsb,xY,prime   .. text: "v\"2\"2\" \"TTVEEdUTETdeUUTUVTEFR"

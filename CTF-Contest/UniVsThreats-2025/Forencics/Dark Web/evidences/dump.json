@@ -1,0 +1,3762 @@
+[
+  {
+    "_index": "packets-2025-04-25",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.encap_type": "1",
+          "frame.time": "Apr 25, 2025 05:42:38.861623000 CDT",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1745574158.861623000",
+          "frame.time_delta": "0.000053000",
+          "frame.time_delta_displayed": "18.305928000",
+          "frame.time_relative": "1162.279888000",
+          "frame.number": "574",
+          "frame.len": "260",
+          "frame.cap_len": "260",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:ip:tcp:http:urlencoded-form",
+          "frame.coloring_rule.name": "HTTP",
+          "frame.coloring_rule.string": "http || tcp.port == 80 || http2"
+        },
+        "eth": {
+          "eth.dst": "00:00:00:00:00:00",
+          "eth.dst_tree": {
+            "eth.dst_resolved": "00:00:00_00:00:00",
+            "eth.dst.oui": "0",
+            "eth.dst.oui_resolved": "Officially Xerox, but 0:0:0:0:0:0 is more common",
+            "eth.addr": "00:00:00:00:00:00",
+            "eth.addr_resolved": "00:00:00_00:00:00",
+            "eth.addr.oui": "0",
+            "eth.addr.oui_resolved": "Officially Xerox, but 0:0:0:0:0:0 is more common",
+            "eth.dst.lg": "0",
+            "eth.lg": "0",
+            "eth.dst.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.src": "00:00:00:00:00:00",
+          "eth.src_tree": {
+            "eth.src_resolved": "00:00:00_00:00:00",
+            "eth.src.oui": "0",
+            "eth.src.oui_resolved": "Officially Xerox, but 0:0:0:0:0:0 is more common",
+            "eth.addr": "00:00:00:00:00:00",
+            "eth.addr_resolved": "00:00:00_00:00:00",
+            "eth.addr.oui": "0",
+            "eth.addr.oui_resolved": "Officially Xerox, but 0:0:0:0:0:0 is more common",
+            "eth.src.lg": "0",
+            "eth.lg": "0",
+            "eth.src.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.type": "0x0800"
+        },
+        "ip": {
+          "ip.version": "4",
+          "ip.hdr_len": "20",
+          "ip.dsfield": "0x00",
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp": "0",
+            "ip.dsfield.ecn": "0"
+          },
+          "ip.len": "246",
+          "ip.id": "0xb981",
+          "ip.flags": "0x02",
+          "ip.flags_tree": {
+            "ip.flags.rb": "0",
+            "ip.flags.df": "1",
+            "ip.flags.mf": "0"
+          },
+          "ip.frag_offset": "0",
+          "ip.ttl": "64",
+          "ip.proto": "6",
+          "ip.checksum": "0x827e",
+          "ip.checksum.status": "2",
+          "ip.src": "127.0.0.1",
+          "ip.addr": "127.0.0.1",
+          "ip.src_host": "127.0.0.1",
+          "ip.host": "127.0.0.1",
+          "ip.dst": "127.0.0.1",
+          "ip.addr": "127.0.0.1",
+          "ip.dst_host": "127.0.0.1",
+          "ip.host": "127.0.0.1"
+        },
+        "tcp": {
+          "tcp.srcport": "38424",
+          "tcp.dstport": "9000",
+          "tcp.port": "38424",
+          "tcp.port": "9000",
+          "tcp.stream": "49",
+          "tcp.completeness": "31",
+          "tcp.len": "194",
+          "tcp.seq": "1",
+          "tcp.seq_raw": "3918946480",
+          "tcp.nxtseq": "195",
+          "tcp.ack": "1",
+          "tcp.ack_raw": "1680481726",
+          "tcp.hdr_len": "32",
+          "tcp.flags": "0x0018",
+          "tcp.flags_tree": {
+            "tcp.flags.res": "0",
+            "tcp.flags.ae": "0",
+            "tcp.flags.cwr": "0",
+            "tcp.flags.ece": "0",
+            "tcp.flags.urg": "0",
+            "tcp.flags.ack": "1",
+            "tcp.flags.push": "1",
+            "tcp.flags.reset": "0",
+            "tcp.flags.syn": "0",
+            "tcp.flags.fin": "0",
+            "tcp.flags.str": "·······AP···"
+          },
+          "tcp.window_size_value": "512",
+          "tcp.window_size": "65536",
+          "tcp.window_size_scalefactor": "128",
+          "tcp.checksum": "0xfeea",
+          "tcp.checksum.status": "2",
+          "tcp.urgent_pointer": "0",
+          "tcp.options": "01:01:08:0a:e8:a1:c8:cb:e8:a1:c8:cb",
+          "tcp.options_tree": {
+            "tcp.options.nop": "01",
+            "tcp.options.nop_tree": {
+              "tcp.option_kind": "1"
+            },
+            "tcp.options.nop": "01",
+            "tcp.options.nop_tree": {
+              "tcp.option_kind": "1"
+            },
+            "tcp.options.timestamp": "08:0a:e8:a1:c8:cb:e8:a1:c8:cb",
+            "tcp.options.timestamp_tree": {
+              "tcp.option_kind": "8",
+              "tcp.option_len": "10",
+              "tcp.options.timestamp.tsval": "3902916811",
+              "tcp.options.timestamp.tsecr": "3902916811"
+            }
+          },
+          "Timestamps": {
+            "tcp.time_relative": "0.000082000",
+            "tcp.time_delta": "0.000053000"
+          },
+          "tcp.analysis": {
+            "tcp.analysis.initial_rtt": "0.000029000",
+            "tcp.analysis.bytes_in_flight": "194",
+            "tcp.analysis.push_bytes_sent": "194"
+          },
+          "tcp.payload": "50:4f:53:54:20:2f:73:65:6e:64:20:48:54:54:50:2f:31:2e:31:0d:0a:48:6f:73:74:3a:20:6c:6f:63:61:6c:68:6f:73:74:3a:39:30:30:30:0d:0a:55:73:65:72:2d:41:67:65:6e:74:3a:20:63:75:72:6c:2f:38:2e:35:2e:30:0d:0a:41:63:63:65:70:74:3a:20:2a:2f:2a:0d:0a:43:6f:6e:74:65:6e:74:2d:4c:65:6e:67:74:68:3a:20:34:33:0d:0a:43:6f:6e:74:65:6e:74:2d:54:79:70:65:3a:20:61:70:70:6c:69:63:61:74:69:6f:6e:2f:78:2d:77:77:77:2d:66:6f:72:6d:2d:75:72:6c:65:6e:63:6f:64:65:64:0d:0a:0d:0a:43:68:61:72:6f:6e:20:56:49:3a:20:35:64:62:63:39:38:64:63:63:39:38:33:61:37:30:37:32:38:62:64:30:38:32:64:31:61:34:37:35:34:36:65"
+        },
+        "http": {
+          "POST /send HTTP/1.1\\r\\n": {
+            "_ws.expert": {
+              "http.chat": "",
+              "_ws.expert.message": "POST /send HTTP/1.1\\r\\n",
+              "_ws.expert.severity": "2097152",
+              "_ws.expert.group": "33554432"
+            },
+            "http.request.method": "POST",
+            "http.request.uri": "/send",
+            "http.request.version": "HTTP/1.1"
+          },
+          "http.host": "localhost:9000",
+          "http.request.line": "Host: localhost:9000\r\n",
+          "http.user_agent": "curl/8.5.0",
+          "http.request.line": "User-Agent: curl/8.5.0\r\n",
+          "http.accept": "*/*",
+          "http.request.line": "Accept: */*\r\n",
+          "http.content_length_header": "43",
+          "http.content_length_header_tree": {
+            "http.content_length": "43"
+          },
+          "http.request.line": "Content-Length: 43\r\n",
+          "http.content_type": "application/x-www-form-urlencoded",
+          "http.request.line": "Content-Type: application/x-www-form-urlencoded\r\n",
+          "\\r\\n": "",
+          "http.request.full_uri": "http://localhost:9000/send",
+          "http.request": "1",
+          "http.request_number": "1",
+          "http.response_in": "578",
+          "http.file_data": "Charon VI: 5dbc98dcc983a70728bd082d1a47546e"
+        },
+        "urlencoded-form": {
+          "Form item: \"Charon VI: 5dbc98dcc983a70728bd082d1a47546e\" = \"\"": {
+            "urlencoded-form.key": "Charon VI: 5dbc98dcc983a70728bd082d1a47546e",
+            "urlencoded-form.value": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2025-04-25",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.encap_type": "1",
+          "frame.time": "Apr 25, 2025 05:42:55.827169000 CDT",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1745574175.827169000",
+          "frame.time_delta": "0.000058000",
+          "frame.time_delta_displayed": "16.965546000",
+          "frame.time_relative": "1179.245434000",
+          "frame.number": "588",
+          "frame.len": "260",
+          "frame.cap_len": "260",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:ip:tcp:http:urlencoded-form",
+          "frame.coloring_rule.name": "HTTP",
+          "frame.coloring_rule.string": "http || tcp.port == 80 || http2"
+        },
+        "eth": {
+          "eth.dst": "00:00:00:00:00:00",
+          "eth.dst_tree": {
+            "eth.dst_resolved": "00:00:00_00:00:00",
+            "eth.dst.oui": "0",
+            "eth.dst.oui_resolved": "Officially Xerox, but 0:0:0:0:0:0 is more common",
+            "eth.addr": "00:00:00:00:00:00",
+            "eth.addr_resolved": "00:00:00_00:00:00",
+            "eth.addr.oui": "0",
+            "eth.addr.oui_resolved": "Officially Xerox, but 0:0:0:0:0:0 is more common",
+            "eth.dst.lg": "0",
+            "eth.lg": "0",
+            "eth.dst.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.src": "00:00:00:00:00:00",
+          "eth.src_tree": {
+            "eth.src_resolved": "00:00:00_00:00:00",
+            "eth.src.oui": "0",
+            "eth.src.oui_resolved": "Officially Xerox, but 0:0:0:0:0:0 is more common",
+            "eth.addr": "00:00:00:00:00:00",
+            "eth.addr_resolved": "00:00:00_00:00:00",
+            "eth.addr.oui": "0",
+            "eth.addr.oui_resolved": "Officially Xerox, but 0:0:0:0:0:0 is more common",
+            "eth.src.lg": "0",
+            "eth.lg": "0",
+            "eth.src.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.type": "0x0800"
+        },
+        "ip": {
+          "ip.version": "4",
+          "ip.hdr_len": "20",
+          "ip.dsfield": "0x00",
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp": "0",
+            "ip.dsfield.ecn": "0"
+          },
+          "ip.len": "246",
+          "ip.id": "0xfa3c",
+          "ip.flags": "0x02",
+          "ip.flags_tree": {
+            "ip.flags.rb": "0",
+            "ip.flags.df": "1",
+            "ip.flags.mf": "0"
+          },
+          "ip.frag_offset": "0",
+          "ip.ttl": "64",
+          "ip.proto": "6",
+          "ip.checksum": "0x41c3",
+          "ip.checksum.status": "2",
+          "ip.src": "127.0.0.1",
+          "ip.addr": "127.0.0.1",
+          "ip.src_host": "127.0.0.1",
+          "ip.host": "127.0.0.1",
+          "ip.dst": "127.0.0.1",
+          "ip.addr": "127.0.0.1",
+          "ip.dst_host": "127.0.0.1",
+          "ip.host": "127.0.0.1"
+        },
+        "tcp": {
+          "tcp.srcport": "51546",
+          "tcp.dstport": "9000",
+          "tcp.port": "51546",
+          "tcp.port": "9000",
+          "tcp.stream": "51",
+          "tcp.completeness": "31",
+          "tcp.len": "194",
+          "tcp.seq": "1",
+          "tcp.seq_raw": "4155308365",
+          "tcp.nxtseq": "195",
+          "tcp.ack": "1",
+          "tcp.ack_raw": "1903120428",
+          "tcp.hdr_len": "32",
+          "tcp.flags": "0x0018",
+          "tcp.flags_tree": {
+            "tcp.flags.res": "0",
+            "tcp.flags.ae": "0",
+            "tcp.flags.cwr": "0",
+            "tcp.flags.ece": "0",
+            "tcp.flags.urg": "0",
+            "tcp.flags.ack": "1",
+            "tcp.flags.push": "1",
+            "tcp.flags.reset": "0",
+            "tcp.flags.syn": "0",
+            "tcp.flags.fin": "0",
+            "tcp.flags.str": "·······AP···"
+          },
+          "tcp.window_size_value": "512",
+          "tcp.window_size": "65536",
+          "tcp.window_size_scalefactor": "128",
+          "tcp.checksum": "0xfeea",
+          "tcp.checksum.status": "2",
+          "tcp.urgent_pointer": "0",
+          "tcp.options": "01:01:08:0a:e8:a2:0b:10:e8:a2:0b:10",
+          "tcp.options_tree": {
+            "tcp.options.nop": "01",
+            "tcp.options.nop_tree": {
+              "tcp.option_kind": "1"
+            },
+            "tcp.options.nop": "01",
+            "tcp.options.nop_tree": {
+              "tcp.option_kind": "1"
+            },
+            "tcp.options.timestamp": "08:0a:e8:a2:0b:10:e8:a2:0b:10",
+            "tcp.options.timestamp_tree": {
+              "tcp.option_kind": "8",
+              "tcp.option_len": "10",
+              "tcp.options.timestamp.tsval": "3902933776",
+              "tcp.options.timestamp.tsecr": "3902933776"
+            }
+          },
+          "Timestamps": {
+            "tcp.time_relative": "0.000082000",
+            "tcp.time_delta": "0.000058000"
+          },
+          "tcp.analysis": {
+            "tcp.analysis.initial_rtt": "0.000024000",
+            "tcp.analysis.bytes_in_flight": "194",
+            "tcp.analysis.push_bytes_sent": "194"
+          },
+          "tcp.payload": "50:4f:53:54:20:2f:73:65:6e:64:20:48:54:54:50:2f:31:2e:31:0d:0a:48:6f:73:74:3a:20:6c:6f:63:61:6c:68:6f:73:74:3a:39:30:30:30:0d:0a:55:73:65:72:2d:41:67:65:6e:74:3a:20:63:75:72:6c:2f:38:2e:35:2e:30:0d:0a:41:63:63:65:70:74:3a:20:2a:2f:2a:0d:0a:43:6f:6e:74:65:6e:74:2d:4c:65:6e:67:74:68:3a:20:34:33:0d:0a:43:6f:6e:74:65:6e:74:2d:54:79:70:65:3a:20:61:70:70:6c:69:63:61:74:69:6f:6e:2f:78:2d:77:77:77:2d:66:6f:72:6d:2d:75:72:6c:65:6e:63:6f:64:65:64:0d:0a:0d:0a:43:68:61:72:6f:6e:20:56:49:3a:20:66:37:32:63:39:31:35:64:38:66:35:37:35:61:35:63:30:39:39:39:62:35:66:33:37:62:36:64:39:39:62:37"
+        },
+        "http": {
+          "POST /send HTTP/1.1\\r\\n": {
+            "_ws.expert": {
+              "http.chat": "",
+              "_ws.expert.message": "POST /send HTTP/1.1\\r\\n",
+              "_ws.expert.severity": "2097152",
+              "_ws.expert.group": "33554432"
+            },
+            "http.request.method": "POST",
+            "http.request.uri": "/send",
+            "http.request.version": "HTTP/1.1"
+          },
+          "http.host": "localhost:9000",
+          "http.request.line": "Host: localhost:9000\r\n",
+          "http.user_agent": "curl/8.5.0",
+          "http.request.line": "User-Agent: curl/8.5.0\r\n",
+          "http.accept": "*/*",
+          "http.request.line": "Accept: */*\r\n",
+          "http.content_length_header": "43",
+          "http.content_length_header_tree": {
+            "http.content_length": "43"
+          },
+          "http.request.line": "Content-Length: 43\r\n",
+          "http.content_type": "application/x-www-form-urlencoded",
+          "http.request.line": "Content-Type: application/x-www-form-urlencoded\r\n",
+          "\\r\\n": "",
+          "http.request.full_uri": "http://localhost:9000/send",
+          "http.request": "1",
+          "http.request_number": "1",
+          "http.response_in": "592",
+          "http.file_data": "Charon VI: f72c915d8f575a5c0999b5f37b6d99b7"
+        },
+        "urlencoded-form": {
+          "Form item: \"Charon VI: f72c915d8f575a5c0999b5f37b6d99b7\" = \"\"": {
+            "urlencoded-form.key": "Charon VI: f72c915d8f575a5c0999b5f37b6d99b7",
+            "urlencoded-form.value": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2025-04-25",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.encap_type": "1",
+          "frame.time": "Apr 25, 2025 05:43:08.659111000 CDT",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1745574188.659111000",
+          "frame.time_delta": "0.000043000",
+          "frame.time_delta_displayed": "12.831942000",
+          "frame.time_relative": "1192.077376000",
+          "frame.number": "602",
+          "frame.len": "260",
+          "frame.cap_len": "260",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:ip:tcp:http:urlencoded-form",
+          "frame.coloring_rule.name": "HTTP",
+          "frame.coloring_rule.string": "http || tcp.port == 80 || http2"
+        },
+        "eth": {
+          "eth.dst": "00:00:00:00:00:00",
+          "eth.dst_tree": {
+            "eth.dst_resolved": "00:00:00_00:00:00",
+            "eth.dst.oui": "0",
+            "eth.dst.oui_resolved": "Officially Xerox, but 0:0:0:0:0:0 is more common",
+            "eth.addr": "00:00:00:00:00:00",
+            "eth.addr_resolved": "00:00:00_00:00:00",
+            "eth.addr.oui": "0",
+            "eth.addr.oui_resolved": "Officially Xerox, but 0:0:0:0:0:0 is more common",
+            "eth.dst.lg": "0",
+            "eth.lg": "0",
+            "eth.dst.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.src": "00:00:00:00:00:00",
+          "eth.src_tree": {
+            "eth.src_resolved": "00:00:00_00:00:00",
+            "eth.src.oui": "0",
+            "eth.src.oui_resolved": "Officially Xerox, but 0:0:0:0:0:0 is more common",
+            "eth.addr": "00:00:00:00:00:00",
+            "eth.addr_resolved": "00:00:00_00:00:00",
+            "eth.addr.oui": "0",
+            "eth.addr.oui_resolved": "Officially Xerox, but 0:0:0:0:0:0 is more common",
+            "eth.src.lg": "0",
+            "eth.lg": "0",
+            "eth.src.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.type": "0x0800"
+        },
+        "ip": {
+          "ip.version": "4",
+          "ip.hdr_len": "20",
+          "ip.dsfield": "0x00",
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp": "0",
+            "ip.dsfield.ecn": "0"
+          },
+          "ip.len": "246",
+          "ip.id": "0x0686",
+          "ip.flags": "0x02",
+          "ip.flags_tree": {
+            "ip.flags.rb": "0",
+            "ip.flags.df": "1",
+            "ip.flags.mf": "0"
+          },
+          "ip.frag_offset": "0",
+          "ip.ttl": "64",
+          "ip.proto": "6",
+          "ip.checksum": "0x357a",
+          "ip.checksum.status": "2",
+          "ip.src": "127.0.0.1",
+          "ip.addr": "127.0.0.1",
+          "ip.src_host": "127.0.0.1",
+          "ip.host": "127.0.0.1",
+          "ip.dst": "127.0.0.1",
+          "ip.addr": "127.0.0.1",
+          "ip.dst_host": "127.0.0.1",
+          "ip.host": "127.0.0.1"
+        },
+        "tcp": {
+          "tcp.srcport": "36952",
+          "tcp.dstport": "9000",
+          "tcp.port": "36952",
+          "tcp.port": "9000",
+          "tcp.stream": "53",
+          "tcp.completeness": "31",
+          "tcp.len": "194",
+          "tcp.seq": "1",
+          "tcp.seq_raw": "881970558",
+          "tcp.nxtseq": "195",
+          "tcp.ack": "1",
+          "tcp.ack_raw": "2401114816",
+          "tcp.hdr_len": "32",
+          "tcp.flags": "0x0018",
+          "tcp.flags_tree": {
+            "tcp.flags.res": "0",
+            "tcp.flags.ae": "0",
+            "tcp.flags.cwr": "0",
+            "tcp.flags.ece": "0",
+            "tcp.flags.urg": "0",
+            "tcp.flags.ack": "1",
+            "tcp.flags.push": "1",
+            "tcp.flags.reset": "0",
+            "tcp.flags.syn": "0",
+            "tcp.flags.fin": "0",
+            "tcp.flags.str": "·······AP···"
+          },
+          "tcp.window_size_value": "512",
+          "tcp.window_size": "65536",
+          "tcp.window_size_scalefactor": "128",
+          "tcp.checksum": "0xfeea",
+          "tcp.checksum.status": "2",
+          "tcp.urgent_pointer": "0",
+          "tcp.options": "01:01:08:0a:e8:a2:3d:30:e8:a2:3d:30",
+          "tcp.options_tree": {
+            "tcp.options.nop": "01",
+            "tcp.options.nop_tree": {
+              "tcp.option_kind": "1"
+            },
+            "tcp.options.nop": "01",
+            "tcp.options.nop_tree": {
+              "tcp.option_kind": "1"
+            },
+            "tcp.options.timestamp": "08:0a:e8:a2:3d:30:e8:a2:3d:30",
+            "tcp.options.timestamp_tree": {
+              "tcp.option_kind": "8",
+              "tcp.option_len": "10",
+              "tcp.options.timestamp.tsval": "3902946608",
+              "tcp.options.timestamp.tsecr": "3902946608"
+            }
+          },
+          "Timestamps": {
+            "tcp.time_relative": "0.000063000",
+            "tcp.time_delta": "0.000043000"
+          },
+          "tcp.analysis": {
+            "tcp.analysis.initial_rtt": "0.000020000",
+            "tcp.analysis.bytes_in_flight": "194",
+            "tcp.analysis.push_bytes_sent": "194"
+          },
+          "tcp.payload": "50:4f:53:54:20:2f:73:65:6e:64:20:48:54:54:50:2f:31:2e:31:0d:0a:48:6f:73:74:3a:20:6c:6f:63:61:6c:68:6f:73:74:3a:39:30:30:30:0d:0a:55:73:65:72:2d:41:67:65:6e:74:3a:20:63:75:72:6c:2f:38:2e:35:2e:30:0d:0a:41:63:63:65:70:74:3a:20:2a:2f:2a:0d:0a:43:6f:6e:74:65:6e:74:2d:4c:65:6e:67:74:68:3a:20:34:33:0d:0a:43:6f:6e:74:65:6e:74:2d:54:79:70:65:3a:20:61:70:70:6c:69:63:61:74:69:6f:6e:2f:78:2d:77:77:77:2d:66:6f:72:6d:2d:75:72:6c:65:6e:63:6f:64:65:64:0d:0a:0d:0a:43:68:61:72:6f:6e:20:56:49:3a:20:61:32:30:62:62:61:35:35:34:62:66:61:31:35:38:30:61:39:64:34:61:61:32:62:36:38:37:39:65:64:34:36"
+        },
+        "http": {
+          "POST /send HTTP/1.1\\r\\n": {
+            "_ws.expert": {
+              "http.chat": "",
+              "_ws.expert.message": "POST /send HTTP/1.1\\r\\n",
+              "_ws.expert.severity": "2097152",
+              "_ws.expert.group": "33554432"
+            },
+            "http.request.method": "POST",
+            "http.request.uri": "/send",
+            "http.request.version": "HTTP/1.1"
+          },
+          "http.host": "localhost:9000",
+          "http.request.line": "Host: localhost:9000\r\n",
+          "http.user_agent": "curl/8.5.0",
+          "http.request.line": "User-Agent: curl/8.5.0\r\n",
+          "http.accept": "*/*",
+          "http.request.line": "Accept: */*\r\n",
+          "http.content_length_header": "43",
+          "http.content_length_header_tree": {
+            "http.content_length": "43"
+          },
+          "http.request.line": "Content-Length: 43\r\n",
+          "http.content_type": "application/x-www-form-urlencoded",
+          "http.request.line": "Content-Type: application/x-www-form-urlencoded\r\n",
+          "\\r\\n": "",
+          "http.request.full_uri": "http://localhost:9000/send",
+          "http.request": "1",
+          "http.request_number": "1",
+          "http.response_in": "606",
+          "http.file_data": "Charon VI: a20bba554bfa1580a9d4aa2b6879ed46"
+        },
+        "urlencoded-form": {
+          "Form item: \"Charon VI: a20bba554bfa1580a9d4aa2b6879ed46\" = \"\"": {
+            "urlencoded-form.key": "Charon VI: a20bba554bfa1580a9d4aa2b6879ed46",
+            "urlencoded-form.value": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2025-04-25",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.encap_type": "1",
+          "frame.time": "Apr 25, 2025 05:43:22.794104000 CDT",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1745574202.794104000",
+          "frame.time_delta": "0.000025000",
+          "frame.time_delta_displayed": "14.134993000",
+          "frame.time_relative": "1206.212369000",
+          "frame.number": "616",
+          "frame.len": "260",
+          "frame.cap_len": "260",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:ip:tcp:http:urlencoded-form",
+          "frame.coloring_rule.name": "HTTP",
+          "frame.coloring_rule.string": "http || tcp.port == 80 || http2"
+        },
+        "eth": {
+          "eth.dst": "00:00:00:00:00:00",
+          "eth.dst_tree": {
+            "eth.dst_resolved": "00:00:00_00:00:00",
+            "eth.dst.oui": "0",
+            "eth.dst.oui_resolved": "Officially Xerox, but 0:0:0:0:0:0 is more common",
+            "eth.addr": "00:00:00:00:00:00",
+            "eth.addr_resolved": "00:00:00_00:00:00",
+            "eth.addr.oui": "0",
+            "eth.addr.oui_resolved": "Officially Xerox, but 0:0:0:0:0:0 is more common",
+            "eth.dst.lg": "0",
+            "eth.lg": "0",
+            "eth.dst.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.src": "00:00:00:00:00:00",
+          "eth.src_tree": {
+            "eth.src_resolved": "00:00:00_00:00:00",
+            "eth.src.oui": "0",
+            "eth.src.oui_resolved": "Officially Xerox, but 0:0:0:0:0:0 is more common",
+            "eth.addr": "00:00:00:00:00:00",
+            "eth.addr_resolved": "00:00:00_00:00:00",
+            "eth.addr.oui": "0",
+            "eth.addr.oui_resolved": "Officially Xerox, but 0:0:0:0:0:0 is more common",
+            "eth.src.lg": "0",
+            "eth.lg": "0",
+            "eth.src.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.type": "0x0800"
+        },
+        "ip": {
+          "ip.version": "4",
+          "ip.hdr_len": "20",
+          "ip.dsfield": "0x00",
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp": "0",
+            "ip.dsfield.ecn": "0"
+          },
+          "ip.len": "246",
+          "ip.id": "0x362d",
+          "ip.flags": "0x02",
+          "ip.flags_tree": {
+            "ip.flags.rb": "0",
+            "ip.flags.df": "1",
+            "ip.flags.mf": "0"
+          },
+          "ip.frag_offset": "0",
+          "ip.ttl": "64",
+          "ip.proto": "6",
+          "ip.checksum": "0x05d3",
+          "ip.checksum.status": "2",
+          "ip.src": "127.0.0.1",
+          "ip.addr": "127.0.0.1",
+          "ip.src_host": "127.0.0.1",
+          "ip.host": "127.0.0.1",
+          "ip.dst": "127.0.0.1",
+          "ip.addr": "127.0.0.1",
+          "ip.dst_host": "127.0.0.1",
+          "ip.host": "127.0.0.1"
+        },
+        "tcp": {
+          "tcp.srcport": "48040",
+          "tcp.dstport": "9000",
+          "tcp.port": "48040",
+          "tcp.port": "9000",
+          "tcp.stream": "55",
+          "tcp.completeness": "31",
+          "tcp.len": "194",
+          "tcp.seq": "1",
+          "tcp.seq_raw": "2896285338",
+          "tcp.nxtseq": "195",
+          "tcp.ack": "1",
+          "tcp.ack_raw": "2525109164",
+          "tcp.hdr_len": "32",
+          "tcp.flags": "0x0018",
+          "tcp.flags_tree": {
+            "tcp.flags.res": "0",
+            "tcp.flags.ae": "0",
+            "tcp.flags.cwr": "0",
+            "tcp.flags.ece": "0",
+            "tcp.flags.urg": "0",
+            "tcp.flags.ack": "1",
+            "tcp.flags.push": "1",
+            "tcp.flags.reset": "0",
+            "tcp.flags.syn": "0",
+            "tcp.flags.fin": "0",
+            "tcp.flags.str": "·······AP···"
+          },
+          "tcp.window_size_value": "512",
+          "tcp.window_size": "65536",
+          "tcp.window_size_scalefactor": "128",
+          "tcp.checksum": "0xfeea",
+          "tcp.checksum.status": "2",
+          "tcp.urgent_pointer": "0",
+          "tcp.options": "01:01:08:0a:e8:a2:74:67:e8:a2:74:67",
+          "tcp.options_tree": {
+            "tcp.options.nop": "01",
+            "tcp.options.nop_tree": {
+              "tcp.option_kind": "1"
+            },
+            "tcp.options.nop": "01",
+            "tcp.options.nop_tree": {
+              "tcp.option_kind": "1"
+            },
+            "tcp.options.timestamp": "08:0a:e8:a2:74:67:e8:a2:74:67",
+            "tcp.options.timestamp_tree": {
+              "tcp.option_kind": "8",
+              "tcp.option_len": "10",
+              "tcp.options.timestamp.tsval": "3902960743",
+              "tcp.options.timestamp.tsecr": "3902960743"
+            }
+          },
+          "Timestamps": {
+            "tcp.time_relative": "0.000040000",
+            "tcp.time_delta": "0.000025000"
+          },
+          "tcp.analysis": {
+            "tcp.analysis.initial_rtt": "0.000015000",
+            "tcp.analysis.bytes_in_flight": "194",
+            "tcp.analysis.push_bytes_sent": "194"
+          },
+          "tcp.payload": "50:4f:53:54:20:2f:73:65:6e:64:20:48:54:54:50:2f:31:2e:31:0d:0a:48:6f:73:74:3a:20:6c:6f:63:61:6c:68:6f:73:74:3a:39:30:30:30:0d:0a:55:73:65:72:2d:41:67:65:6e:74:3a:20:63:75:72:6c:2f:38:2e:35:2e:30:0d:0a:41:63:63:65:70:74:3a:20:2a:2f:2a:0d:0a:43:6f:6e:74:65:6e:74:2d:4c:65:6e:67:74:68:3a:20:34:33:0d:0a:43:6f:6e:74:65:6e:74:2d:54:79:70:65:3a:20:61:70:70:6c:69:63:61:74:69:6f:6e:2f:78:2d:77:77:77:2d:66:6f:72:6d:2d:75:72:6c:65:6e:63:6f:64:65:64:0d:0a:0d:0a:43:68:61:72:6f:6e:20:56:49:3a:20:30:32:62:65:65:65:61:34:37:65:65:33:63:66:65:32:31:32:65:36:62:64:38:34:33:62:39:63:65:37:64:33"
+        },
+        "http": {
+          "POST /send HTTP/1.1\\r\\n": {
+            "_ws.expert": {
+              "http.chat": "",
+              "_ws.expert.message": "POST /send HTTP/1.1\\r\\n",
+              "_ws.expert.severity": "2097152",
+              "_ws.expert.group": "33554432"
+            },
+            "http.request.method": "POST",
+            "http.request.uri": "/send",
+            "http.request.version": "HTTP/1.1"
+          },
+          "http.host": "localhost:9000",
+          "http.request.line": "Host: localhost:9000\r\n",
+          "http.user_agent": "curl/8.5.0",
+          "http.request.line": "User-Agent: curl/8.5.0\r\n",
+          "http.accept": "*/*",
+          "http.request.line": "Accept: */*\r\n",
+          "http.content_length_header": "43",
+          "http.content_length_header_tree": {
+            "http.content_length": "43"
+          },
+          "http.request.line": "Content-Length: 43\r\n",
+          "http.content_type": "application/x-www-form-urlencoded",
+          "http.request.line": "Content-Type: application/x-www-form-urlencoded\r\n",
+          "\\r\\n": "",
+          "http.request.full_uri": "http://localhost:9000/send",
+          "http.request": "1",
+          "http.request_number": "1",
+          "http.response_in": "620",
+          "http.file_data": "Charon VI: 02beeea47ee3cfe212e6bd843b9ce7d3"
+        },
+        "urlencoded-form": {
+          "Form item: \"Charon VI: 02beeea47ee3cfe212e6bd843b9ce7d3\" = \"\"": {
+            "urlencoded-form.key": "Charon VI: 02beeea47ee3cfe212e6bd843b9ce7d3",
+            "urlencoded-form.value": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2025-04-25",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.encap_type": "1",
+          "frame.time": "Apr 25, 2025 05:45:23.548097000 CDT",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1745574323.548097000",
+          "frame.time_delta": "0.000038000",
+          "frame.time_delta_displayed": "120.753993000",
+          "frame.time_relative": "1326.966362000",
+          "frame.number": "630",
+          "frame.len": "260",
+          "frame.cap_len": "260",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:ip:tcp:http:urlencoded-form",
+          "frame.coloring_rule.name": "HTTP",
+          "frame.coloring_rule.string": "http || tcp.port == 80 || http2"
+        },
+        "eth": {
+          "eth.dst": "00:00:00:00:00:00",
+          "eth.dst_tree": {
+            "eth.dst_resolved": "00:00:00_00:00:00",
+            "eth.dst.oui": "0",
+            "eth.dst.oui_resolved": "Officially Xerox, but 0:0:0:0:0:0 is more common",
+            "eth.addr": "00:00:00:00:00:00",
+            "eth.addr_resolved": "00:00:00_00:00:00",
+            "eth.addr.oui": "0",
+            "eth.addr.oui_resolved": "Officially Xerox, but 0:0:0:0:0:0 is more common",
+            "eth.dst.lg": "0",
+            "eth.lg": "0",
+            "eth.dst.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.src": "00:00:00:00:00:00",
+          "eth.src_tree": {
+            "eth.src_resolved": "00:00:00_00:00:00",
+            "eth.src.oui": "0",
+            "eth.src.oui_resolved": "Officially Xerox, but 0:0:0:0:0:0 is more common",
+            "eth.addr": "00:00:00:00:00:00",
+            "eth.addr_resolved": "00:00:00_00:00:00",
+            "eth.addr.oui": "0",
+            "eth.addr.oui_resolved": "Officially Xerox, but 0:0:0:0:0:0 is more common",
+            "eth.src.lg": "0",
+            "eth.lg": "0",
+            "eth.src.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.type": "0x0800"
+        },
+        "ip": {
+          "ip.version": "4",
+          "ip.hdr_len": "20",
+          "ip.dsfield": "0x00",
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp": "0",
+            "ip.dsfield.ecn": "0"
+          },
+          "ip.len": "246",
+          "ip.id": "0xd6bb",
+          "ip.flags": "0x02",
+          "ip.flags_tree": {
+            "ip.flags.rb": "0",
+            "ip.flags.df": "1",
+            "ip.flags.mf": "0"
+          },
+          "ip.frag_offset": "0",
+          "ip.ttl": "64",
+          "ip.proto": "6",
+          "ip.checksum": "0x6544",
+          "ip.checksum.status": "2",
+          "ip.src": "127.0.0.1",
+          "ip.addr": "127.0.0.1",
+          "ip.src_host": "127.0.0.1",
+          "ip.host": "127.0.0.1",
+          "ip.dst": "127.0.0.1",
+          "ip.addr": "127.0.0.1",
+          "ip.dst_host": "127.0.0.1",
+          "ip.host": "127.0.0.1"
+        },
+        "tcp": {
+          "tcp.srcport": "33188",
+          "tcp.dstport": "9000",
+          "tcp.port": "33188",
+          "tcp.port": "9000",
+          "tcp.stream": "57",
+          "tcp.completeness": "31",
+          "tcp.len": "194",
+          "tcp.seq": "1",
+          "tcp.seq_raw": "2367448644",
+          "tcp.nxtseq": "195",
+          "tcp.ack": "1",
+          "tcp.ack_raw": "261274007",
+          "tcp.hdr_len": "32",
+          "tcp.flags": "0x0018",
+          "tcp.flags_tree": {
+            "tcp.flags.res": "0",
+            "tcp.flags.ae": "0",
+            "tcp.flags.cwr": "0",
+            "tcp.flags.ece": "0",
+            "tcp.flags.urg": "0",
+            "tcp.flags.ack": "1",
+            "tcp.flags.push": "1",
+            "tcp.flags.reset": "0",
+            "tcp.flags.syn": "0",
+            "tcp.flags.fin": "0",
+            "tcp.flags.str": "·······AP···"
+          },
+          "tcp.window_size_value": "512",
+          "tcp.window_size": "65536",
+          "tcp.window_size_scalefactor": "128",
+          "tcp.checksum": "0xfeea",
+          "tcp.checksum.status": "2",
+          "tcp.urgent_pointer": "0",
+          "tcp.options": "01:01:08:0a:e8:a4:4c:19:e8:a4:4c:19",
+          "tcp.options_tree": {
+            "tcp.options.nop": "01",
+            "tcp.options.nop_tree": {
+              "tcp.option_kind": "1"
+            },
+            "tcp.options.nop": "01",
+            "tcp.options.nop_tree": {
+              "tcp.option_kind": "1"
+            },
+            "tcp.options.timestamp": "08:0a:e8:a4:4c:19:e8:a4:4c:19",
+            "tcp.options.timestamp_tree": {
+              "tcp.option_kind": "8",
+              "tcp.option_len": "10",
+              "tcp.options.timestamp.tsval": "3903081497",
+              "tcp.options.timestamp.tsecr": "3903081497"
+            }
+          },
+          "Timestamps": {
+            "tcp.time_relative": "0.000056000",
+            "tcp.time_delta": "0.000038000"
+          },
+          "tcp.analysis": {
+            "tcp.analysis.initial_rtt": "0.000018000",
+            "tcp.analysis.bytes_in_flight": "194",
+            "tcp.analysis.push_bytes_sent": "194"
+          },
+          "tcp.payload": "50:4f:53:54:20:2f:73:65:6e:64:20:48:54:54:50:2f:31:2e:31:0d:0a:48:6f:73:74:3a:20:6c:6f:63:61:6c:68:6f:73:74:3a:39:30:30:30:0d:0a:55:73:65:72:2d:41:67:65:6e:74:3a:20:63:75:72:6c:2f:38:2e:35:2e:30:0d:0a:41:63:63:65:70:74:3a:20:2a:2f:2a:0d:0a:43:6f:6e:74:65:6e:74:2d:4c:65:6e:67:74:68:3a:20:34:33:0d:0a:43:6f:6e:74:65:6e:74:2d:54:79:70:65:3a:20:61:70:70:6c:69:63:61:74:69:6f:6e:2f:78:2d:77:77:77:2d:66:6f:72:6d:2d:75:72:6c:65:6e:63:6f:64:65:64:0d:0a:0d:0a:43:68:61:72:6f:6e:20:56:49:3a:20:33:31:31:32:63:37:61:38:62:36:63:64:31:36:37:37:64:62:30:65:33:31:37:33:65:31:34:30:66:63:30:35"
+        },
+        "http": {
+          "POST /send HTTP/1.1\\r\\n": {
+            "_ws.expert": {
+              "http.chat": "",
+              "_ws.expert.message": "POST /send HTTP/1.1\\r\\n",
+              "_ws.expert.severity": "2097152",
+              "_ws.expert.group": "33554432"
+            },
+            "http.request.method": "POST",
+            "http.request.uri": "/send",
+            "http.request.version": "HTTP/1.1"
+          },
+          "http.host": "localhost:9000",
+          "http.request.line": "Host: localhost:9000\r\n",
+          "http.user_agent": "curl/8.5.0",
+          "http.request.line": "User-Agent: curl/8.5.0\r\n",
+          "http.accept": "*/*",
+          "http.request.line": "Accept: */*\r\n",
+          "http.content_length_header": "43",
+          "http.content_length_header_tree": {
+            "http.content_length": "43"
+          },
+          "http.request.line": "Content-Length: 43\r\n",
+          "http.content_type": "application/x-www-form-urlencoded",
+          "http.request.line": "Content-Type: application/x-www-form-urlencoded\r\n",
+          "\\r\\n": "",
+          "http.request.full_uri": "http://localhost:9000/send",
+          "http.request": "1",
+          "http.request_number": "1",
+          "http.response_in": "634",
+          "http.file_data": "Charon VI: 3112c7a8b6cd1677db0e3173e140fc05"
+        },
+        "urlencoded-form": {
+          "Form item: \"Charon VI: 3112c7a8b6cd1677db0e3173e140fc05\" = \"\"": {
+            "urlencoded-form.key": "Charon VI: 3112c7a8b6cd1677db0e3173e140fc05",
+            "urlencoded-form.value": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2025-04-25",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.encap_type": "1",
+          "frame.time": "Apr 25, 2025 05:45:56.695562000 CDT",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1745574356.695562000",
+          "frame.time_delta": "0.000096000",
+          "frame.time_delta_displayed": "33.147465000",
+          "frame.time_relative": "1360.113827000",
+          "frame.number": "644",
+          "frame.len": "260",
+          "frame.cap_len": "260",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:ip:tcp:http:urlencoded-form",
+          "frame.coloring_rule.name": "HTTP",
+          "frame.coloring_rule.string": "http || tcp.port == 80 || http2"
+        },
+        "eth": {
+          "eth.dst": "00:00:00:00:00:00",
+          "eth.dst_tree": {
+            "eth.dst_resolved": "00:00:00_00:00:00",
+            "eth.dst.oui": "0",
+            "eth.dst.oui_resolved": "Officially Xerox, but 0:0:0:0:0:0 is more common",
+            "eth.addr": "00:00:00:00:00:00",
+            "eth.addr_resolved": "00:00:00_00:00:00",
+            "eth.addr.oui": "0",
+            "eth.addr.oui_resolved": "Officially Xerox, but 0:0:0:0:0:0 is more common",
+            "eth.dst.lg": "0",
+            "eth.lg": "0",
+            "eth.dst.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.src": "00:00:00:00:00:00",
+          "eth.src_tree": {
+            "eth.src_resolved": "00:00:00_00:00:00",
+            "eth.src.oui": "0",
+            "eth.src.oui_resolved": "Officially Xerox, but 0:0:0:0:0:0 is more common",
+            "eth.addr": "00:00:00:00:00:00",
+            "eth.addr_resolved": "00:00:00_00:00:00",
+            "eth.addr.oui": "0",
+            "eth.addr.oui_resolved": "Officially Xerox, but 0:0:0:0:0:0 is more common",
+            "eth.src.lg": "0",
+            "eth.lg": "0",
+            "eth.src.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.type": "0x0800"
+        },
+        "ip": {
+          "ip.version": "4",
+          "ip.hdr_len": "20",
+          "ip.dsfield": "0x00",
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp": "0",
+            "ip.dsfield.ecn": "0"
+          },
+          "ip.len": "246",
+          "ip.id": "0xb4c2",
+          "ip.flags": "0x02",
+          "ip.flags_tree": {
+            "ip.flags.rb": "0",
+            "ip.flags.df": "1",
+            "ip.flags.mf": "0"
+          },
+          "ip.frag_offset": "0",
+          "ip.ttl": "64",
+          "ip.proto": "6",
+          "ip.checksum": "0x873d",
+          "ip.checksum.status": "2",
+          "ip.src": "127.0.0.1",
+          "ip.addr": "127.0.0.1",
+          "ip.src_host": "127.0.0.1",
+          "ip.host": "127.0.0.1",
+          "ip.dst": "127.0.0.1",
+          "ip.addr": "127.0.0.1",
+          "ip.dst_host": "127.0.0.1",
+          "ip.host": "127.0.0.1"
+        },
+        "tcp": {
+          "tcp.srcport": "55112",
+          "tcp.dstport": "9000",
+          "tcp.port": "55112",
+          "tcp.port": "9000",
+          "tcp.stream": "59",
+          "tcp.completeness": "31",
+          "tcp.len": "194",
+          "tcp.seq": "1",
+          "tcp.seq_raw": "3370804574",
+          "tcp.nxtseq": "195",
+          "tcp.ack": "1",
+          "tcp.ack_raw": "1132918701",
+          "tcp.hdr_len": "32",
+          "tcp.flags": "0x0018",
+          "tcp.flags_tree": {
+            "tcp.flags.res": "0",
+            "tcp.flags.ae": "0",
+            "tcp.flags.cwr": "0",
+            "tcp.flags.ece": "0",
+            "tcp.flags.urg": "0",
+            "tcp.flags.ack": "1",
+            "tcp.flags.push": "1",
+            "tcp.flags.reset": "0",
+            "tcp.flags.syn": "0",
+            "tcp.flags.fin": "0",
+            "tcp.flags.str": "·······AP···"
+          },
+          "tcp.window_size_value": "512",
+          "tcp.window_size": "65536",
+          "tcp.window_size_scalefactor": "128",
+          "tcp.checksum": "0xfeea",
+          "tcp.checksum.status": "2",
+          "tcp.urgent_pointer": "0",
+          "tcp.options": "01:01:08:0a:e8:a4:cd:95:e8:a4:cd:95",
+          "tcp.options_tree": {
+            "tcp.options.nop": "01",
+            "tcp.options.nop_tree": {
+              "tcp.option_kind": "1"
+            },
+            "tcp.options.nop": "01",
+            "tcp.options.nop_tree": {
+              "tcp.option_kind": "1"
+            },
+            "tcp.options.timestamp": "08:0a:e8:a4:cd:95:e8:a4:cd:95",
+            "tcp.options.timestamp_tree": {
+              "tcp.option_kind": "8",
+              "tcp.option_len": "10",
+              "tcp.options.timestamp.tsval": "3903114645",
+              "tcp.options.timestamp.tsecr": "3903114645"
+            }
+          },
+          "Timestamps": {
+            "tcp.time_relative": "0.000129000",
+            "tcp.time_delta": "0.000096000"
+          },
+          "tcp.analysis": {
+            "tcp.analysis.initial_rtt": "0.000033000",
+            "tcp.analysis.bytes_in_flight": "194",
+            "tcp.analysis.push_bytes_sent": "194"
+          },
+          "tcp.payload": "50:4f:53:54:20:2f:73:65:6e:64:20:48:54:54:50:2f:31:2e:31:0d:0a:48:6f:73:74:3a:20:6c:6f:63:61:6c:68:6f:73:74:3a:39:30:30:30:0d:0a:55:73:65:72:2d:41:67:65:6e:74:3a:20:63:75:72:6c:2f:38:2e:35:2e:30:0d:0a:41:63:63:65:70:74:3a:20:2a:2f:2a:0d:0a:43:6f:6e:74:65:6e:74:2d:4c:65:6e:67:74:68:3a:20:34:33:0d:0a:43:6f:6e:74:65:6e:74:2d:54:79:70:65:3a:20:61:70:70:6c:69:63:61:74:69:6f:6e:2f:78:2d:77:77:77:2d:66:6f:72:6d:2d:75:72:6c:65:6e:63:6f:64:65:64:0d:0a:0d:0a:43:68:61:72:6f:6e:20:56:49:3a:20:35:30:66:34:36:34:36:31:33:35:32:30:35:66:64:34:61:35:34:31:37:65:34:36:30:63:66:37:31:64:33:63"
+        },
+        "http": {
+          "POST /send HTTP/1.1\\r\\n": {
+            "_ws.expert": {
+              "http.chat": "",
+              "_ws.expert.message": "POST /send HTTP/1.1\\r\\n",
+              "_ws.expert.severity": "2097152",
+              "_ws.expert.group": "33554432"
+            },
+            "http.request.method": "POST",
+            "http.request.uri": "/send",
+            "http.request.version": "HTTP/1.1"
+          },
+          "http.host": "localhost:9000",
+          "http.request.line": "Host: localhost:9000\r\n",
+          "http.user_agent": "curl/8.5.0",
+          "http.request.line": "User-Agent: curl/8.5.0\r\n",
+          "http.accept": "*/*",
+          "http.request.line": "Accept: */*\r\n",
+          "http.content_length_header": "43",
+          "http.content_length_header_tree": {
+            "http.content_length": "43"
+          },
+          "http.request.line": "Content-Length: 43\r\n",
+          "http.content_type": "application/x-www-form-urlencoded",
+          "http.request.line": "Content-Type: application/x-www-form-urlencoded\r\n",
+          "\\r\\n": "",
+          "http.request.full_uri": "http://localhost:9000/send",
+          "http.request": "1",
+          "http.request_number": "1",
+          "http.response_in": "648",
+          "http.file_data": "Charon VI: 50f4646135205fd4a5417e460cf71d3c"
+        },
+        "urlencoded-form": {
+          "Form item: \"Charon VI: 50f4646135205fd4a5417e460cf71d3c\" = \"\"": {
+            "urlencoded-form.key": "Charon VI: 50f4646135205fd4a5417e460cf71d3c",
+            "urlencoded-form.value": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2025-04-25",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.encap_type": "1",
+          "frame.time": "Apr 25, 2025 05:46:12.962726000 CDT",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1745574372.962726000",
+          "frame.time_delta": "0.000196000",
+          "frame.time_delta_displayed": "16.267164000",
+          "frame.time_relative": "1376.380991000",
+          "frame.number": "658",
+          "frame.len": "260",
+          "frame.cap_len": "260",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:ip:tcp:http:urlencoded-form",
+          "frame.coloring_rule.name": "HTTP",
+          "frame.coloring_rule.string": "http || tcp.port == 80 || http2"
+        },
+        "eth": {
+          "eth.dst": "00:00:00:00:00:00",
+          "eth.dst_tree": {
+            "eth.dst_resolved": "00:00:00_00:00:00",
+            "eth.dst.oui": "0",
+            "eth.dst.oui_resolved": "Officially Xerox, but 0:0:0:0:0:0 is more common",
+            "eth.addr": "00:00:00:00:00:00",
+            "eth.addr_resolved": "00:00:00_00:00:00",
+            "eth.addr.oui": "0",
+            "eth.addr.oui_resolved": "Officially Xerox, but 0:0:0:0:0:0 is more common",
+            "eth.dst.lg": "0",
+            "eth.lg": "0",
+            "eth.dst.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.src": "00:00:00:00:00:00",
+          "eth.src_tree": {
+            "eth.src_resolved": "00:00:00_00:00:00",
+            "eth.src.oui": "0",
+            "eth.src.oui_resolved": "Officially Xerox, but 0:0:0:0:0:0 is more common",
+            "eth.addr": "00:00:00:00:00:00",
+            "eth.addr_resolved": "00:00:00_00:00:00",
+            "eth.addr.oui": "0",
+            "eth.addr.oui_resolved": "Officially Xerox, but 0:0:0:0:0:0 is more common",
+            "eth.src.lg": "0",
+            "eth.lg": "0",
+            "eth.src.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.type": "0x0800"
+        },
+        "ip": {
+          "ip.version": "4",
+          "ip.hdr_len": "20",
+          "ip.dsfield": "0x00",
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp": "0",
+            "ip.dsfield.ecn": "0"
+          },
+          "ip.len": "246",
+          "ip.id": "0x1c92",
+          "ip.flags": "0x02",
+          "ip.flags_tree": {
+            "ip.flags.rb": "0",
+            "ip.flags.df": "1",
+            "ip.flags.mf": "0"
+          },
+          "ip.frag_offset": "0",
+          "ip.ttl": "64",
+          "ip.proto": "6",
+          "ip.checksum": "0x1f6e",
+          "ip.checksum.status": "2",
+          "ip.src": "127.0.0.1",
+          "ip.addr": "127.0.0.1",
+          "ip.src_host": "127.0.0.1",
+          "ip.host": "127.0.0.1",
+          "ip.dst": "127.0.0.1",
+          "ip.addr": "127.0.0.1",
+          "ip.dst_host": "127.0.0.1",
+          "ip.host": "127.0.0.1"
+        },
+        "tcp": {
+          "tcp.srcport": "42712",
+          "tcp.dstport": "9000",
+          "tcp.port": "42712",
+          "tcp.port": "9000",
+          "tcp.stream": "61",
+          "tcp.completeness": "31",
+          "tcp.len": "194",
+          "tcp.seq": "1",
+          "tcp.seq_raw": "2217675108",
+          "tcp.nxtseq": "195",
+          "tcp.ack": "1",
+          "tcp.ack_raw": "4161040185",
+          "tcp.hdr_len": "32",
+          "tcp.flags": "0x0018",
+          "tcp.flags_tree": {
+            "tcp.flags.res": "0",
+            "tcp.flags.ae": "0",
+            "tcp.flags.cwr": "0",
+            "tcp.flags.ece": "0",
+            "tcp.flags.urg": "0",
+            "tcp.flags.ack": "1",
+            "tcp.flags.push": "1",
+            "tcp.flags.reset": "0",
+            "tcp.flags.syn": "0",
+            "tcp.flags.fin": "0",
+            "tcp.flags.str": "·······AP···"
+          },
+          "tcp.window_size_value": "512",
+          "tcp.window_size": "65536",
+          "tcp.window_size_scalefactor": "128",
+          "tcp.checksum": "0xfeea",
+          "tcp.checksum.status": "2",
+          "tcp.urgent_pointer": "0",
+          "tcp.options": "01:01:08:0a:e8:a5:0d:20:e8:a5:0d:20",
+          "tcp.options_tree": {
+            "tcp.options.nop": "01",
+            "tcp.options.nop_tree": {
+              "tcp.option_kind": "1"
+            },
+            "tcp.options.nop": "01",
+            "tcp.options.nop_tree": {
+              "tcp.option_kind": "1"
+            },
+            "tcp.options.timestamp": "08:0a:e8:a5:0d:20:e8:a5:0d:20",
+            "tcp.options.timestamp_tree": {
+              "tcp.option_kind": "8",
+              "tcp.option_len": "10",
+              "tcp.options.timestamp.tsval": "3903130912",
+              "tcp.options.timestamp.tsecr": "3903130912"
+            }
+          },
+          "Timestamps": {
+            "tcp.time_relative": "0.000214000",
+            "tcp.time_delta": "0.000196000"
+          },
+          "tcp.analysis": {
+            "tcp.analysis.initial_rtt": "0.000018000",
+            "tcp.analysis.bytes_in_flight": "194",
+            "tcp.analysis.push_bytes_sent": "194"
+          },
+          "tcp.payload": "50:4f:53:54:20:2f:73:65:6e:64:20:48:54:54:50:2f:31:2e:31:0d:0a:48:6f:73:74:3a:20:6c:6f:63:61:6c:68:6f:73:74:3a:39:30:30:30:0d:0a:55:73:65:72:2d:41:67:65:6e:74:3a:20:63:75:72:6c:2f:38:2e:35:2e:30:0d:0a:41:63:63:65:70:74:3a:20:2a:2f:2a:0d:0a:43:6f:6e:74:65:6e:74:2d:4c:65:6e:67:74:68:3a:20:34:33:0d:0a:43:6f:6e:74:65:6e:74:2d:54:79:70:65:3a:20:61:70:70:6c:69:63:61:74:69:6f:6e:2f:78:2d:77:77:77:2d:66:6f:72:6d:2d:75:72:6c:65:6e:63:6f:64:65:64:0d:0a:0d:0a:43:68:61:72:6f:6e:20:56:49:3a:20:65:62:32:32:63:66:61:30:38:39:30:61:32:64:66:33:31:37:37:39:36:36:38:35:34:61:37:31:37:36:62:63"
+        },
+        "http": {
+          "POST /send HTTP/1.1\\r\\n": {
+            "_ws.expert": {
+              "http.chat": "",
+              "_ws.expert.message": "POST /send HTTP/1.1\\r\\n",
+              "_ws.expert.severity": "2097152",
+              "_ws.expert.group": "33554432"
+            },
+            "http.request.method": "POST",
+            "http.request.uri": "/send",
+            "http.request.version": "HTTP/1.1"
+          },
+          "http.host": "localhost:9000",
+          "http.request.line": "Host: localhost:9000\r\n",
+          "http.user_agent": "curl/8.5.0",
+          "http.request.line": "User-Agent: curl/8.5.0\r\n",
+          "http.accept": "*/*",
+          "http.request.line": "Accept: */*\r\n",
+          "http.content_length_header": "43",
+          "http.content_length_header_tree": {
+            "http.content_length": "43"
+          },
+          "http.request.line": "Content-Length: 43\r\n",
+          "http.content_type": "application/x-www-form-urlencoded",
+          "http.request.line": "Content-Type: application/x-www-form-urlencoded\r\n",
+          "\\r\\n": "",
+          "http.request.full_uri": "http://localhost:9000/send",
+          "http.request": "1",
+          "http.request_number": "1",
+          "http.response_in": "662",
+          "http.file_data": "Charon VI: eb22cfa0890a2df3177966854a7176bc"
+        },
+        "urlencoded-form": {
+          "Form item: \"Charon VI: eb22cfa0890a2df3177966854a7176bc\" = \"\"": {
+            "urlencoded-form.key": "Charon VI: eb22cfa0890a2df3177966854a7176bc",
+            "urlencoded-form.value": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2025-04-25",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.encap_type": "1",
+          "frame.time": "Apr 25, 2025 05:46:24.299949000 CDT",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1745574384.299949000",
+          "frame.time_delta": "0.000054000",
+          "frame.time_delta_displayed": "11.337223000",
+          "frame.time_relative": "1387.718214000",
+          "frame.number": "672",
+          "frame.len": "260",
+          "frame.cap_len": "260",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:ip:tcp:http:urlencoded-form",
+          "frame.coloring_rule.name": "HTTP",
+          "frame.coloring_rule.string": "http || tcp.port == 80 || http2"
+        },
+        "eth": {
+          "eth.dst": "00:00:00:00:00:00",
+          "eth.dst_tree": {
+            "eth.dst_resolved": "00:00:00_00:00:00",
+            "eth.dst.oui": "0",
+            "eth.dst.oui_resolved": "Officially Xerox, but 0:0:0:0:0:0 is more common",
+            "eth.addr": "00:00:00:00:00:00",
+            "eth.addr_resolved": "00:00:00_00:00:00",
+            "eth.addr.oui": "0",
+            "eth.addr.oui_resolved": "Officially Xerox, but 0:0:0:0:0:0 is more common",
+            "eth.dst.lg": "0",
+            "eth.lg": "0",
+            "eth.dst.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.src": "00:00:00:00:00:00",
+          "eth.src_tree": {
+            "eth.src_resolved": "00:00:00_00:00:00",
+            "eth.src.oui": "0",
+            "eth.src.oui_resolved": "Officially Xerox, but 0:0:0:0:0:0 is more common",
+            "eth.addr": "00:00:00:00:00:00",
+            "eth.addr_resolved": "00:00:00_00:00:00",
+            "eth.addr.oui": "0",
+            "eth.addr.oui_resolved": "Officially Xerox, but 0:0:0:0:0:0 is more common",
+            "eth.src.lg": "0",
+            "eth.lg": "0",
+            "eth.src.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.type": "0x0800"
+        },
+        "ip": {
+          "ip.version": "4",
+          "ip.hdr_len": "20",
+          "ip.dsfield": "0x00",
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp": "0",
+            "ip.dsfield.ecn": "0"
+          },
+          "ip.len": "246",
+          "ip.id": "0x028d",
+          "ip.flags": "0x02",
+          "ip.flags_tree": {
+            "ip.flags.rb": "0",
+            "ip.flags.df": "1",
+            "ip.flags.mf": "0"
+          },
+          "ip.frag_offset": "0",
+          "ip.ttl": "64",
+          "ip.proto": "6",
+          "ip.checksum": "0x3973",
+          "ip.checksum.status": "2",
+          "ip.src": "127.0.0.1",
+          "ip.addr": "127.0.0.1",
+          "ip.src_host": "127.0.0.1",
+          "ip.host": "127.0.0.1",
+          "ip.dst": "127.0.0.1",
+          "ip.addr": "127.0.0.1",
+          "ip.dst_host": "127.0.0.1",
+          "ip.host": "127.0.0.1"
+        },
+        "tcp": {
+          "tcp.srcport": "51310",
+          "tcp.dstport": "9000",
+          "tcp.port": "51310",
+          "tcp.port": "9000",
+          "tcp.stream": "63",
+          "tcp.completeness": "31",
+          "tcp.len": "194",
+          "tcp.seq": "1",
+          "tcp.seq_raw": "3068237642",
+          "tcp.nxtseq": "195",
+          "tcp.ack": "1",
+          "tcp.ack_raw": "2235977288",
+          "tcp.hdr_len": "32",
+          "tcp.flags": "0x0018",
+          "tcp.flags_tree": {
+            "tcp.flags.res": "0",
+            "tcp.flags.ae": "0",
+            "tcp.flags.cwr": "0",
+            "tcp.flags.ece": "0",
+            "tcp.flags.urg": "0",
+            "tcp.flags.ack": "1",
+            "tcp.flags.push": "1",
+            "tcp.flags.reset": "0",
+            "tcp.flags.syn": "0",
+            "tcp.flags.fin": "0",
+            "tcp.flags.str": "·······AP···"
+          },
+          "tcp.window_size_value": "512",
+          "tcp.window_size": "65536",
+          "tcp.window_size_scalefactor": "128",
+          "tcp.checksum": "0xfeea",
+          "tcp.checksum.status": "2",
+          "tcp.urgent_pointer": "0",
+          "tcp.options": "01:01:08:0a:e8:a5:39:69:e8:a5:39:69",
+          "tcp.options_tree": {
+            "tcp.options.nop": "01",
+            "tcp.options.nop_tree": {
+              "tcp.option_kind": "1"
+            },
+            "tcp.options.nop": "01",
+            "tcp.options.nop_tree": {
+              "tcp.option_kind": "1"
+            },
+            "tcp.options.timestamp": "08:0a:e8:a5:39:69:e8:a5:39:69",
+            "tcp.options.timestamp_tree": {
+              "tcp.option_kind": "8",
+              "tcp.option_len": "10",
+              "tcp.options.timestamp.tsval": "3903142249",
+              "tcp.options.timestamp.tsecr": "3903142249"
+            }
+          },
+          "Timestamps": {
+            "tcp.time_relative": "0.000078000",
+            "tcp.time_delta": "0.000054000"
+          },
+          "tcp.analysis": {
+            "tcp.analysis.initial_rtt": "0.000024000",
+            "tcp.analysis.bytes_in_flight": "194",
+            "tcp.analysis.push_bytes_sent": "194"
+          },
+          "tcp.payload": "50:4f:53:54:20:2f:73:65:6e:64:20:48:54:54:50:2f:31:2e:31:0d:0a:48:6f:73:74:3a:20:6c:6f:63:61:6c:68:6f:73:74:3a:39:30:30:30:0d:0a:55:73:65:72:2d:41:67:65:6e:74:3a:20:63:75:72:6c:2f:38:2e:35:2e:30:0d:0a:41:63:63:65:70:74:3a:20:2a:2f:2a:0d:0a:43:6f:6e:74:65:6e:74:2d:4c:65:6e:67:74:68:3a:20:34:33:0d:0a:43:6f:6e:74:65:6e:74:2d:54:79:70:65:3a:20:61:70:70:6c:69:63:61:74:69:6f:6e:2f:78:2d:77:77:77:2d:66:6f:72:6d:2d:75:72:6c:65:6e:63:6f:64:65:64:0d:0a:0d:0a:43:68:61:72:6f:6e:20:56:49:3a:20:38:34:35:66:34:39:61:61:31:39:63:39:35:35:62:38:34:39:64:35:37:35:39:33:62:66:30:39:64:32:32:34"
+        },
+        "http": {
+          "POST /send HTTP/1.1\\r\\n": {
+            "_ws.expert": {
+              "http.chat": "",
+              "_ws.expert.message": "POST /send HTTP/1.1\\r\\n",
+              "_ws.expert.severity": "2097152",
+              "_ws.expert.group": "33554432"
+            },
+            "http.request.method": "POST",
+            "http.request.uri": "/send",
+            "http.request.version": "HTTP/1.1"
+          },
+          "http.host": "localhost:9000",
+          "http.request.line": "Host: localhost:9000\r\n",
+          "http.user_agent": "curl/8.5.0",
+          "http.request.line": "User-Agent: curl/8.5.0\r\n",
+          "http.accept": "*/*",
+          "http.request.line": "Accept: */*\r\n",
+          "http.content_length_header": "43",
+          "http.content_length_header_tree": {
+            "http.content_length": "43"
+          },
+          "http.request.line": "Content-Length: 43\r\n",
+          "http.content_type": "application/x-www-form-urlencoded",
+          "http.request.line": "Content-Type: application/x-www-form-urlencoded\r\n",
+          "\\r\\n": "",
+          "http.request.full_uri": "http://localhost:9000/send",
+          "http.request": "1",
+          "http.request_number": "1",
+          "http.response_in": "676",
+          "http.file_data": "Charon VI: 845f49aa19c955b849d57593bf09d224"
+        },
+        "urlencoded-form": {
+          "Form item: \"Charon VI: 845f49aa19c955b849d57593bf09d224\" = \"\"": {
+            "urlencoded-form.key": "Charon VI: 845f49aa19c955b849d57593bf09d224",
+            "urlencoded-form.value": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2025-04-25",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.encap_type": "1",
+          "frame.time": "Apr 25, 2025 05:46:38.176287000 CDT",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1745574398.176287000",
+          "frame.time_delta": "0.000045000",
+          "frame.time_delta_displayed": "13.876338000",
+          "frame.time_relative": "1401.594552000",
+          "frame.number": "686",
+          "frame.len": "260",
+          "frame.cap_len": "260",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:ip:tcp:http:urlencoded-form",
+          "frame.coloring_rule.name": "HTTP",
+          "frame.coloring_rule.string": "http || tcp.port == 80 || http2"
+        },
+        "eth": {
+          "eth.dst": "00:00:00:00:00:00",
+          "eth.dst_tree": {
+            "eth.dst_resolved": "00:00:00_00:00:00",
+            "eth.dst.oui": "0",
+            "eth.dst.oui_resolved": "Officially Xerox, but 0:0:0:0:0:0 is more common",
+            "eth.addr": "00:00:00:00:00:00",
+            "eth.addr_resolved": "00:00:00_00:00:00",
+            "eth.addr.oui": "0",
+            "eth.addr.oui_resolved": "Officially Xerox, but 0:0:0:0:0:0 is more common",
+            "eth.dst.lg": "0",
+            "eth.lg": "0",
+            "eth.dst.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.src": "00:00:00:00:00:00",
+          "eth.src_tree": {
+            "eth.src_resolved": "00:00:00_00:00:00",
+            "eth.src.oui": "0",
+            "eth.src.oui_resolved": "Officially Xerox, but 0:0:0:0:0:0 is more common",
+            "eth.addr": "00:00:00:00:00:00",
+            "eth.addr_resolved": "00:00:00_00:00:00",
+            "eth.addr.oui": "0",
+            "eth.addr.oui_resolved": "Officially Xerox, but 0:0:0:0:0:0 is more common",
+            "eth.src.lg": "0",
+            "eth.lg": "0",
+            "eth.src.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.type": "0x0800"
+        },
+        "ip": {
+          "ip.version": "4",
+          "ip.hdr_len": "20",
+          "ip.dsfield": "0x00",
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp": "0",
+            "ip.dsfield.ecn": "0"
+          },
+          "ip.len": "246",
+          "ip.id": "0x23f6",
+          "ip.flags": "0x02",
+          "ip.flags_tree": {
+            "ip.flags.rb": "0",
+            "ip.flags.df": "1",
+            "ip.flags.mf": "0"
+          },
+          "ip.frag_offset": "0",
+          "ip.ttl": "64",
+          "ip.proto": "6",
+          "ip.checksum": "0x180a",
+          "ip.checksum.status": "2",
+          "ip.src": "127.0.0.1",
+          "ip.addr": "127.0.0.1",
+          "ip.src_host": "127.0.0.1",
+          "ip.host": "127.0.0.1",
+          "ip.dst": "127.0.0.1",
+          "ip.addr": "127.0.0.1",
+          "ip.dst_host": "127.0.0.1",
+          "ip.host": "127.0.0.1"
+        },
+        "tcp": {
+          "tcp.srcport": "44164",
+          "tcp.dstport": "9000",
+          "tcp.port": "44164",
+          "tcp.port": "9000",
+          "tcp.stream": "65",
+          "tcp.completeness": "31",
+          "tcp.len": "194",
+          "tcp.seq": "1",
+          "tcp.seq_raw": "546274358",
+          "tcp.nxtseq": "195",
+          "tcp.ack": "1",
+          "tcp.ack_raw": "3886192240",
+          "tcp.hdr_len": "32",
+          "tcp.flags": "0x0018",
+          "tcp.flags_tree": {
+            "tcp.flags.res": "0",
+            "tcp.flags.ae": "0",
+            "tcp.flags.cwr": "0",
+            "tcp.flags.ece": "0",
+            "tcp.flags.urg": "0",
+            "tcp.flags.ack": "1",
+            "tcp.flags.push": "1",
+            "tcp.flags.reset": "0",
+            "tcp.flags.syn": "0",
+            "tcp.flags.fin": "0",
+            "tcp.flags.str": "·······AP···"
+          },
+          "tcp.window_size_value": "512",
+          "tcp.window_size": "65536",
+          "tcp.window_size_scalefactor": "128",
+          "tcp.checksum": "0xfeea",
+          "tcp.checksum.status": "2",
+          "tcp.urgent_pointer": "0",
+          "tcp.options": "01:01:08:0a:e8:a5:6f:9d:e8:a5:6f:9d",
+          "tcp.options_tree": {
+            "tcp.options.nop": "01",
+            "tcp.options.nop_tree": {
+              "tcp.option_kind": "1"
+            },
+            "tcp.options.nop": "01",
+            "tcp.options.nop_tree": {
+              "tcp.option_kind": "1"
+            },
+            "tcp.options.timestamp": "08:0a:e8:a5:6f:9d:e8:a5:6f:9d",
+            "tcp.options.timestamp_tree": {
+              "tcp.option_kind": "8",
+              "tcp.option_len": "10",
+              "tcp.options.timestamp.tsval": "3903156125",
+              "tcp.options.timestamp.tsecr": "3903156125"
+            }
+          },
+          "Timestamps": {
+            "tcp.time_relative": "0.000065000",
+            "tcp.time_delta": "0.000045000"
+          },
+          "tcp.analysis": {
+            "tcp.analysis.initial_rtt": "0.000020000",
+            "tcp.analysis.bytes_in_flight": "194",
+            "tcp.analysis.push_bytes_sent": "194"
+          },
+          "tcp.payload": "50:4f:53:54:20:2f:73:65:6e:64:20:48:54:54:50:2f:31:2e:31:0d:0a:48:6f:73:74:3a:20:6c:6f:63:61:6c:68:6f:73:74:3a:39:30:30:30:0d:0a:55:73:65:72:2d:41:67:65:6e:74:3a:20:63:75:72:6c:2f:38:2e:35:2e:30:0d:0a:41:63:63:65:70:74:3a:20:2a:2f:2a:0d:0a:43:6f:6e:74:65:6e:74:2d:4c:65:6e:67:74:68:3a:20:34:33:0d:0a:43:6f:6e:74:65:6e:74:2d:54:79:70:65:3a:20:61:70:70:6c:69:63:61:74:69:6f:6e:2f:78:2d:77:77:77:2d:66:6f:72:6d:2d:75:72:6c:65:6e:63:6f:64:65:64:0d:0a:0d:0a:43:68:61:72:6f:6e:20:56:49:3a:20:38:37:66:36:33:39:33:31:64:61:37:39:61:61:39:36:39:61:63:34:61:37:37:36:63:65:36:63:66:62:30:33"
+        },
+        "http": {
+          "POST /send HTTP/1.1\\r\\n": {
+            "_ws.expert": {
+              "http.chat": "",
+              "_ws.expert.message": "POST /send HTTP/1.1\\r\\n",
+              "_ws.expert.severity": "2097152",
+              "_ws.expert.group": "33554432"
+            },
+            "http.request.method": "POST",
+            "http.request.uri": "/send",
+            "http.request.version": "HTTP/1.1"
+          },
+          "http.host": "localhost:9000",
+          "http.request.line": "Host: localhost:9000\r\n",
+          "http.user_agent": "curl/8.5.0",
+          "http.request.line": "User-Agent: curl/8.5.0\r\n",
+          "http.accept": "*/*",
+          "http.request.line": "Accept: */*\r\n",
+          "http.content_length_header": "43",
+          "http.content_length_header_tree": {
+            "http.content_length": "43"
+          },
+          "http.request.line": "Content-Length: 43\r\n",
+          "http.content_type": "application/x-www-form-urlencoded",
+          "http.request.line": "Content-Type: application/x-www-form-urlencoded\r\n",
+          "\\r\\n": "",
+          "http.request.full_uri": "http://localhost:9000/send",
+          "http.request": "1",
+          "http.request_number": "1",
+          "http.response_in": "690",
+          "http.file_data": "Charon VI: 87f63931da79aa969ac4a776ce6cfb03"
+        },
+        "urlencoded-form": {
+          "Form item: \"Charon VI: 87f63931da79aa969ac4a776ce6cfb03\" = \"\"": {
+            "urlencoded-form.key": "Charon VI: 87f63931da79aa969ac4a776ce6cfb03",
+            "urlencoded-form.value": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2025-04-25",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.encap_type": "1",
+          "frame.time": "Apr 25, 2025 05:46:50.442104000 CDT",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1745574410.442104000",
+          "frame.time_delta": "0.000038000",
+          "frame.time_delta_displayed": "12.265817000",
+          "frame.time_relative": "1413.860369000",
+          "frame.number": "700",
+          "frame.len": "260",
+          "frame.cap_len": "260",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:ip:tcp:http:urlencoded-form",
+          "frame.coloring_rule.name": "HTTP",
+          "frame.coloring_rule.string": "http || tcp.port == 80 || http2"
+        },
+        "eth": {
+          "eth.dst": "00:00:00:00:00:00",
+          "eth.dst_tree": {
+            "eth.dst_resolved": "00:00:00_00:00:00",
+            "eth.dst.oui": "0",
+            "eth.dst.oui_resolved": "Officially Xerox, but 0:0:0:0:0:0 is more common",
+            "eth.addr": "00:00:00:00:00:00",
+            "eth.addr_resolved": "00:00:00_00:00:00",
+            "eth.addr.oui": "0",
+            "eth.addr.oui_resolved": "Officially Xerox, but 0:0:0:0:0:0 is more common",
+            "eth.dst.lg": "0",
+            "eth.lg": "0",
+            "eth.dst.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.src": "00:00:00:00:00:00",
+          "eth.src_tree": {
+            "eth.src_resolved": "00:00:00_00:00:00",
+            "eth.src.oui": "0",
+            "eth.src.oui_resolved": "Officially Xerox, but 0:0:0:0:0:0 is more common",
+            "eth.addr": "00:00:00:00:00:00",
+            "eth.addr_resolved": "00:00:00_00:00:00",
+            "eth.addr.oui": "0",
+            "eth.addr.oui_resolved": "Officially Xerox, but 0:0:0:0:0:0 is more common",
+            "eth.src.lg": "0",
+            "eth.lg": "0",
+            "eth.src.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.type": "0x0800"
+        },
+        "ip": {
+          "ip.version": "4",
+          "ip.hdr_len": "20",
+          "ip.dsfield": "0x00",
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp": "0",
+            "ip.dsfield.ecn": "0"
+          },
+          "ip.len": "246",
+          "ip.id": "0x878e",
+          "ip.flags": "0x02",
+          "ip.flags_tree": {
+            "ip.flags.rb": "0",
+            "ip.flags.df": "1",
+            "ip.flags.mf": "0"
+          },
+          "ip.frag_offset": "0",
+          "ip.ttl": "64",
+          "ip.proto": "6",
+          "ip.checksum": "0xb471",
+          "ip.checksum.status": "2",
+          "ip.src": "127.0.0.1",
+          "ip.addr": "127.0.0.1",
+          "ip.src_host": "127.0.0.1",
+          "ip.host": "127.0.0.1",
+          "ip.dst": "127.0.0.1",
+          "ip.addr": "127.0.0.1",
+          "ip.dst_host": "127.0.0.1",
+          "ip.host": "127.0.0.1"
+        },
+        "tcp": {
+          "tcp.srcport": "34236",
+          "tcp.dstport": "9000",
+          "tcp.port": "34236",
+          "tcp.port": "9000",
+          "tcp.stream": "67",
+          "tcp.completeness": "31",
+          "tcp.len": "194",
+          "tcp.seq": "1",
+          "tcp.seq_raw": "3952836141",
+          "tcp.nxtseq": "195",
+          "tcp.ack": "1",
+          "tcp.ack_raw": "1963035711",
+          "tcp.hdr_len": "32",
+          "tcp.flags": "0x0018",
+          "tcp.flags_tree": {
+            "tcp.flags.res": "0",
+            "tcp.flags.ae": "0",
+            "tcp.flags.cwr": "0",
+            "tcp.flags.ece": "0",
+            "tcp.flags.urg": "0",
+            "tcp.flags.ack": "1",
+            "tcp.flags.push": "1",
+            "tcp.flags.reset": "0",
+            "tcp.flags.syn": "0",
+            "tcp.flags.fin": "0",
+            "tcp.flags.str": "·······AP···"
+          },
+          "tcp.window_size_value": "512",
+          "tcp.window_size": "65536",
+          "tcp.window_size_scalefactor": "128",
+          "tcp.checksum": "0xfeea",
+          "tcp.checksum.status": "2",
+          "tcp.urgent_pointer": "0",
+          "tcp.options": "01:01:08:0a:e8:a5:9f:87:e8:a5:9f:87",
+          "tcp.options_tree": {
+            "tcp.options.nop": "01",
+            "tcp.options.nop_tree": {
+              "tcp.option_kind": "1"
+            },
+            "tcp.options.nop": "01",
+            "tcp.options.nop_tree": {
+              "tcp.option_kind": "1"
+            },
+            "tcp.options.timestamp": "08:0a:e8:a5:9f:87:e8:a5:9f:87",
+            "tcp.options.timestamp_tree": {
+              "tcp.option_kind": "8",
+              "tcp.option_len": "10",
+              "tcp.options.timestamp.tsval": "3903168391",
+              "tcp.options.timestamp.tsecr": "3903168391"
+            }
+          },
+          "Timestamps": {
+            "tcp.time_relative": "0.000055000",
+            "tcp.time_delta": "0.000038000"
+          },
+          "tcp.analysis": {
+            "tcp.analysis.initial_rtt": "0.000017000",
+            "tcp.analysis.bytes_in_flight": "194",
+            "tcp.analysis.push_bytes_sent": "194"
+          },
+          "tcp.payload": "50:4f:53:54:20:2f:73:65:6e:64:20:48:54:54:50:2f:31:2e:31:0d:0a:48:6f:73:74:3a:20:6c:6f:63:61:6c:68:6f:73:74:3a:39:30:30:30:0d:0a:55:73:65:72:2d:41:67:65:6e:74:3a:20:63:75:72:6c:2f:38:2e:35:2e:30:0d:0a:41:63:63:65:70:74:3a:20:2a:2f:2a:0d:0a:43:6f:6e:74:65:6e:74:2d:4c:65:6e:67:74:68:3a:20:34:33:0d:0a:43:6f:6e:74:65:6e:74:2d:54:79:70:65:3a:20:61:70:70:6c:69:63:61:74:69:6f:6e:2f:78:2d:77:77:77:2d:66:6f:72:6d:2d:75:72:6c:65:6e:63:6f:64:65:64:0d:0a:0d:0a:43:68:61:72:6f:6e:20:56:49:3a:20:39:37:39:33:64:39:64:36:30:34:31:63:38:30:66:34:36:61:64:37:63:31:66:35:33:30:63:38:62:62:66:38"
+        },
+        "http": {
+          "POST /send HTTP/1.1\\r\\n": {
+            "_ws.expert": {
+              "http.chat": "",
+              "_ws.expert.message": "POST /send HTTP/1.1\\r\\n",
+              "_ws.expert.severity": "2097152",
+              "_ws.expert.group": "33554432"
+            },
+            "http.request.method": "POST",
+            "http.request.uri": "/send",
+            "http.request.version": "HTTP/1.1"
+          },
+          "http.host": "localhost:9000",
+          "http.request.line": "Host: localhost:9000\r\n",
+          "http.user_agent": "curl/8.5.0",
+          "http.request.line": "User-Agent: curl/8.5.0\r\n",
+          "http.accept": "*/*",
+          "http.request.line": "Accept: */*\r\n",
+          "http.content_length_header": "43",
+          "http.content_length_header_tree": {
+            "http.content_length": "43"
+          },
+          "http.request.line": "Content-Length: 43\r\n",
+          "http.content_type": "application/x-www-form-urlencoded",
+          "http.request.line": "Content-Type: application/x-www-form-urlencoded\r\n",
+          "\\r\\n": "",
+          "http.request.full_uri": "http://localhost:9000/send",
+          "http.request": "1",
+          "http.request_number": "1",
+          "http.response_in": "704",
+          "http.file_data": "Charon VI: 9793d9d6041c80f46ad7c1f530c8bbf8"
+        },
+        "urlencoded-form": {
+          "Form item: \"Charon VI: 9793d9d6041c80f46ad7c1f530c8bbf8\" = \"\"": {
+            "urlencoded-form.key": "Charon VI: 9793d9d6041c80f46ad7c1f530c8bbf8",
+            "urlencoded-form.value": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2025-04-25",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.encap_type": "1",
+          "frame.time": "Apr 25, 2025 05:47:03.500274000 CDT",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1745574423.500274000",
+          "frame.time_delta": "0.000035000",
+          "frame.time_delta_displayed": "13.058170000",
+          "frame.time_relative": "1426.918539000",
+          "frame.number": "714",
+          "frame.len": "260",
+          "frame.cap_len": "260",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:ip:tcp:http:urlencoded-form",
+          "frame.coloring_rule.name": "HTTP",
+          "frame.coloring_rule.string": "http || tcp.port == 80 || http2"
+        },
+        "eth": {
+          "eth.dst": "00:00:00:00:00:00",
+          "eth.dst_tree": {
+            "eth.dst_resolved": "00:00:00_00:00:00",
+            "eth.dst.oui": "0",
+            "eth.dst.oui_resolved": "Officially Xerox, but 0:0:0:0:0:0 is more common",
+            "eth.addr": "00:00:00:00:00:00",
+            "eth.addr_resolved": "00:00:00_00:00:00",
+            "eth.addr.oui": "0",
+            "eth.addr.oui_resolved": "Officially Xerox, but 0:0:0:0:0:0 is more common",
+            "eth.dst.lg": "0",
+            "eth.lg": "0",
+            "eth.dst.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.src": "00:00:00:00:00:00",
+          "eth.src_tree": {
+            "eth.src_resolved": "00:00:00_00:00:00",
+            "eth.src.oui": "0",
+            "eth.src.oui_resolved": "Officially Xerox, but 0:0:0:0:0:0 is more common",
+            "eth.addr": "00:00:00:00:00:00",
+            "eth.addr_resolved": "00:00:00_00:00:00",
+            "eth.addr.oui": "0",
+            "eth.addr.oui_resolved": "Officially Xerox, but 0:0:0:0:0:0 is more common",
+            "eth.src.lg": "0",
+            "eth.lg": "0",
+            "eth.src.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.type": "0x0800"
+        },
+        "ip": {
+          "ip.version": "4",
+          "ip.hdr_len": "20",
+          "ip.dsfield": "0x00",
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp": "0",
+            "ip.dsfield.ecn": "0"
+          },
+          "ip.len": "246",
+          "ip.id": "0x95b4",
+          "ip.flags": "0x02",
+          "ip.flags_tree": {
+            "ip.flags.rb": "0",
+            "ip.flags.df": "1",
+            "ip.flags.mf": "0"
+          },
+          "ip.frag_offset": "0",
+          "ip.ttl": "64",
+          "ip.proto": "6",
+          "ip.checksum": "0xa64b",
+          "ip.checksum.status": "2",
+          "ip.src": "127.0.0.1",
+          "ip.addr": "127.0.0.1",
+          "ip.src_host": "127.0.0.1",
+          "ip.host": "127.0.0.1",
+          "ip.dst": "127.0.0.1",
+          "ip.addr": "127.0.0.1",
+          "ip.dst_host": "127.0.0.1",
+          "ip.host": "127.0.0.1"
+        },
+        "tcp": {
+          "tcp.srcport": "42712",
+          "tcp.dstport": "9000",
+          "tcp.port": "42712",
+          "tcp.port": "9000",
+          "tcp.stream": "69",
+          "tcp.completeness": "31",
+          "tcp.len": "194",
+          "tcp.seq": "1",
+          "tcp.seq_raw": "2217740841",
+          "tcp.nxtseq": "195",
+          "tcp.ack": "1",
+          "tcp.ack_raw": "655724632",
+          "tcp.hdr_len": "32",
+          "tcp.flags": "0x0018",
+          "tcp.flags_tree": {
+            "tcp.flags.res": "0",
+            "tcp.flags.ae": "0",
+            "tcp.flags.cwr": "0",
+            "tcp.flags.ece": "0",
+            "tcp.flags.urg": "0",
+            "tcp.flags.ack": "1",
+            "tcp.flags.push": "1",
+            "tcp.flags.reset": "0",
+            "tcp.flags.syn": "0",
+            "tcp.flags.fin": "0",
+            "tcp.flags.str": "·······AP···"
+          },
+          "tcp.window_size_value": "512",
+          "tcp.window_size": "65536",
+          "tcp.window_size_scalefactor": "128",
+          "tcp.checksum": "0xfeea",
+          "tcp.checksum.status": "2",
+          "tcp.urgent_pointer": "0",
+          "tcp.options": "01:01:08:0a:e8:a5:d2:89:e8:a5:d2:89",
+          "tcp.options_tree": {
+            "tcp.options.nop": "01",
+            "tcp.options.nop_tree": {
+              "tcp.option_kind": "1"
+            },
+            "tcp.options.nop": "01",
+            "tcp.options.nop_tree": {
+              "tcp.option_kind": "1"
+            },
+            "tcp.options.timestamp": "08:0a:e8:a5:d2:89:e8:a5:d2:89",
+            "tcp.options.timestamp_tree": {
+              "tcp.option_kind": "8",
+              "tcp.option_len": "10",
+              "tcp.options.timestamp.tsval": "3903181449",
+              "tcp.options.timestamp.tsecr": "3903181449"
+            }
+          },
+          "Timestamps": {
+            "tcp.time_relative": "0.000051000",
+            "tcp.time_delta": "0.000035000"
+          },
+          "tcp.analysis": {
+            "tcp.analysis.initial_rtt": "0.000016000",
+            "tcp.analysis.bytes_in_flight": "194",
+            "tcp.analysis.push_bytes_sent": "194"
+          },
+          "tcp.payload": "50:4f:53:54:20:2f:73:65:6e:64:20:48:54:54:50:2f:31:2e:31:0d:0a:48:6f:73:74:3a:20:6c:6f:63:61:6c:68:6f:73:74:3a:39:30:30:30:0d:0a:55:73:65:72:2d:41:67:65:6e:74:3a:20:63:75:72:6c:2f:38:2e:35:2e:30:0d:0a:41:63:63:65:70:74:3a:20:2a:2f:2a:0d:0a:43:6f:6e:74:65:6e:74:2d:4c:65:6e:67:74:68:3a:20:34:33:0d:0a:43:6f:6e:74:65:6e:74:2d:54:79:70:65:3a:20:61:70:70:6c:69:63:61:74:69:6f:6e:2f:78:2d:77:77:77:2d:66:6f:72:6d:2d:75:72:6c:65:6e:63:6f:64:65:64:0d:0a:0d:0a:43:68:61:72:6f:6e:20:56:49:3a:20:32:66:38:38:64:38:39:61:38:66:35:30:34:32:36:61:36:32:38:35:34:34:39:62:65:33:32:38:36:37:30:38"
+        },
+        "http": {
+          "POST /send HTTP/1.1\\r\\n": {
+            "_ws.expert": {
+              "http.chat": "",
+              "_ws.expert.message": "POST /send HTTP/1.1\\r\\n",
+              "_ws.expert.severity": "2097152",
+              "_ws.expert.group": "33554432"
+            },
+            "http.request.method": "POST",
+            "http.request.uri": "/send",
+            "http.request.version": "HTTP/1.1"
+          },
+          "http.host": "localhost:9000",
+          "http.request.line": "Host: localhost:9000\r\n",
+          "http.user_agent": "curl/8.5.0",
+          "http.request.line": "User-Agent: curl/8.5.0\r\n",
+          "http.accept": "*/*",
+          "http.request.line": "Accept: */*\r\n",
+          "http.content_length_header": "43",
+          "http.content_length_header_tree": {
+            "http.content_length": "43"
+          },
+          "http.request.line": "Content-Length: 43\r\n",
+          "http.content_type": "application/x-www-form-urlencoded",
+          "http.request.line": "Content-Type: application/x-www-form-urlencoded\r\n",
+          "\\r\\n": "",
+          "http.request.full_uri": "http://localhost:9000/send",
+          "http.request": "1",
+          "http.request_number": "1",
+          "http.response_in": "718",
+          "http.file_data": "Charon VI: 2f88d89a8f50426a6285449be3286708"
+        },
+        "urlencoded-form": {
+          "Form item: \"Charon VI: 2f88d89a8f50426a6285449be3286708\" = \"\"": {
+            "urlencoded-form.key": "Charon VI: 2f88d89a8f50426a6285449be3286708",
+            "urlencoded-form.value": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2025-04-25",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.encap_type": "1",
+          "frame.time": "Apr 25, 2025 05:47:14.651281000 CDT",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1745574434.651281000",
+          "frame.time_delta": "0.000038000",
+          "frame.time_delta_displayed": "11.151007000",
+          "frame.time_relative": "1438.069546000",
+          "frame.number": "728",
+          "frame.len": "260",
+          "frame.cap_len": "260",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:ip:tcp:http:urlencoded-form",
+          "frame.coloring_rule.name": "HTTP",
+          "frame.coloring_rule.string": "http || tcp.port == 80 || http2"
+        },
+        "eth": {
+          "eth.dst": "00:00:00:00:00:00",
+          "eth.dst_tree": {
+            "eth.dst_resolved": "00:00:00_00:00:00",
+            "eth.dst.oui": "0",
+            "eth.dst.oui_resolved": "Officially Xerox, but 0:0:0:0:0:0 is more common",
+            "eth.addr": "00:00:00:00:00:00",
+            "eth.addr_resolved": "00:00:00_00:00:00",
+            "eth.addr.oui": "0",
+            "eth.addr.oui_resolved": "Officially Xerox, but 0:0:0:0:0:0 is more common",
+            "eth.dst.lg": "0",
+            "eth.lg": "0",
+            "eth.dst.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.src": "00:00:00:00:00:00",
+          "eth.src_tree": {
+            "eth.src_resolved": "00:00:00_00:00:00",
+            "eth.src.oui": "0",
+            "eth.src.oui_resolved": "Officially Xerox, but 0:0:0:0:0:0 is more common",
+            "eth.addr": "00:00:00:00:00:00",
+            "eth.addr_resolved": "00:00:00_00:00:00",
+            "eth.addr.oui": "0",
+            "eth.addr.oui_resolved": "Officially Xerox, but 0:0:0:0:0:0 is more common",
+            "eth.src.lg": "0",
+            "eth.lg": "0",
+            "eth.src.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.type": "0x0800"
+        },
+        "ip": {
+          "ip.version": "4",
+          "ip.hdr_len": "20",
+          "ip.dsfield": "0x00",
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp": "0",
+            "ip.dsfield.ecn": "0"
+          },
+          "ip.len": "246",
+          "ip.id": "0x6969",
+          "ip.flags": "0x02",
+          "ip.flags_tree": {
+            "ip.flags.rb": "0",
+            "ip.flags.df": "1",
+            "ip.flags.mf": "0"
+          },
+          "ip.frag_offset": "0",
+          "ip.ttl": "64",
+          "ip.proto": "6",
+          "ip.checksum": "0xd296",
+          "ip.checksum.status": "2",
+          "ip.src": "127.0.0.1",
+          "ip.addr": "127.0.0.1",
+          "ip.src_host": "127.0.0.1",
+          "ip.host": "127.0.0.1",
+          "ip.dst": "127.0.0.1",
+          "ip.addr": "127.0.0.1",
+          "ip.dst_host": "127.0.0.1",
+          "ip.host": "127.0.0.1"
+        },
+        "tcp": {
+          "tcp.srcport": "35456",
+          "tcp.dstport": "9000",
+          "tcp.port": "35456",
+          "tcp.port": "9000",
+          "tcp.stream": "71",
+          "tcp.completeness": "31",
+          "tcp.len": "194",
+          "tcp.seq": "1",
+          "tcp.seq_raw": "3805463978",
+          "tcp.nxtseq": "195",
+          "tcp.ack": "1",
+          "tcp.ack_raw": "599261704",
+          "tcp.hdr_len": "32",
+          "tcp.flags": "0x0018",
+          "tcp.flags_tree": {
+            "tcp.flags.res": "0",
+            "tcp.flags.ae": "0",
+            "tcp.flags.cwr": "0",
+            "tcp.flags.ece": "0",
+            "tcp.flags.urg": "0",
+            "tcp.flags.ack": "1",
+            "tcp.flags.push": "1",
+            "tcp.flags.reset": "0",
+            "tcp.flags.syn": "0",
+            "tcp.flags.fin": "0",
+            "tcp.flags.str": "·······AP···"
+          },
+          "tcp.window_size_value": "512",
+          "tcp.window_size": "65536",
+          "tcp.window_size_scalefactor": "128",
+          "tcp.checksum": "0xfeea",
+          "tcp.checksum.status": "2",
+          "tcp.urgent_pointer": "0",
+          "tcp.options": "01:01:08:0a:e8:a5:fe:18:e8:a5:fe:18",
+          "tcp.options_tree": {
+            "tcp.options.nop": "01",
+            "tcp.options.nop_tree": {
+              "tcp.option_kind": "1"
+            },
+            "tcp.options.nop": "01",
+            "tcp.options.nop_tree": {
+              "tcp.option_kind": "1"
+            },
+            "tcp.options.timestamp": "08:0a:e8:a5:fe:18:e8:a5:fe:18",
+            "tcp.options.timestamp_tree": {
+              "tcp.option_kind": "8",
+              "tcp.option_len": "10",
+              "tcp.options.timestamp.tsval": "3903192600",
+              "tcp.options.timestamp.tsecr": "3903192600"
+            }
+          },
+          "Timestamps": {
+            "tcp.time_relative": "0.000071000",
+            "tcp.time_delta": "0.000038000"
+          },
+          "tcp.analysis": {
+            "tcp.analysis.initial_rtt": "0.000033000",
+            "tcp.analysis.bytes_in_flight": "194",
+            "tcp.analysis.push_bytes_sent": "194"
+          },
+          "tcp.payload": "50:4f:53:54:20:2f:73:65:6e:64:20:48:54:54:50:2f:31:2e:31:0d:0a:48:6f:73:74:3a:20:6c:6f:63:61:6c:68:6f:73:74:3a:39:30:30:30:0d:0a:55:73:65:72:2d:41:67:65:6e:74:3a:20:63:75:72:6c:2f:38:2e:35:2e:30:0d:0a:41:63:63:65:70:74:3a:20:2a:2f:2a:0d:0a:43:6f:6e:74:65:6e:74:2d:4c:65:6e:67:74:68:3a:20:34:33:0d:0a:43:6f:6e:74:65:6e:74:2d:54:79:70:65:3a:20:61:70:70:6c:69:63:61:74:69:6f:6e:2f:78:2d:77:77:77:2d:66:6f:72:6d:2d:75:72:6c:65:6e:63:6f:64:65:64:0d:0a:0d:0a:43:68:61:72:6f:6e:20:56:49:3a:20:36:31:62:64:32:32:66:30:31:37:35:38:38:32:30:38:61:30:63:61:63:64:66:39:61:31:61:37:63:61:31:65"
+        },
+        "http": {
+          "POST /send HTTP/1.1\\r\\n": {
+            "_ws.expert": {
+              "http.chat": "",
+              "_ws.expert.message": "POST /send HTTP/1.1\\r\\n",
+              "_ws.expert.severity": "2097152",
+              "_ws.expert.group": "33554432"
+            },
+            "http.request.method": "POST",
+            "http.request.uri": "/send",
+            "http.request.version": "HTTP/1.1"
+          },
+          "http.host": "localhost:9000",
+          "http.request.line": "Host: localhost:9000\r\n",
+          "http.user_agent": "curl/8.5.0",
+          "http.request.line": "User-Agent: curl/8.5.0\r\n",
+          "http.accept": "*/*",
+          "http.request.line": "Accept: */*\r\n",
+          "http.content_length_header": "43",
+          "http.content_length_header_tree": {
+            "http.content_length": "43"
+          },
+          "http.request.line": "Content-Length: 43\r\n",
+          "http.content_type": "application/x-www-form-urlencoded",
+          "http.request.line": "Content-Type: application/x-www-form-urlencoded\r\n",
+          "\\r\\n": "",
+          "http.request.full_uri": "http://localhost:9000/send",
+          "http.request": "1",
+          "http.request_number": "1",
+          "http.response_in": "732",
+          "http.file_data": "Charon VI: 61bd22f017588208a0cacdf9a1a7ca1e"
+        },
+        "urlencoded-form": {
+          "Form item: \"Charon VI: 61bd22f017588208a0cacdf9a1a7ca1e\" = \"\"": {
+            "urlencoded-form.key": "Charon VI: 61bd22f017588208a0cacdf9a1a7ca1e",
+            "urlencoded-form.value": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2025-04-25",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.encap_type": "1",
+          "frame.time": "Apr 25, 2025 05:47:27.645845000 CDT",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1745574447.645845000",
+          "frame.time_delta": "0.000053000",
+          "frame.time_delta_displayed": "12.994564000",
+          "frame.time_relative": "1451.064110000",
+          "frame.number": "742",
+          "frame.len": "260",
+          "frame.cap_len": "260",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:ip:tcp:http:urlencoded-form",
+          "frame.coloring_rule.name": "HTTP",
+          "frame.coloring_rule.string": "http || tcp.port == 80 || http2"
+        },
+        "eth": {
+          "eth.dst": "00:00:00:00:00:00",
+          "eth.dst_tree": {
+            "eth.dst_resolved": "00:00:00_00:00:00",
+            "eth.dst.oui": "0",
+            "eth.dst.oui_resolved": "Officially Xerox, but 0:0:0:0:0:0 is more common",
+            "eth.addr": "00:00:00:00:00:00",
+            "eth.addr_resolved": "00:00:00_00:00:00",
+            "eth.addr.oui": "0",
+            "eth.addr.oui_resolved": "Officially Xerox, but 0:0:0:0:0:0 is more common",
+            "eth.dst.lg": "0",
+            "eth.lg": "0",
+            "eth.dst.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.src": "00:00:00:00:00:00",
+          "eth.src_tree": {
+            "eth.src_resolved": "00:00:00_00:00:00",
+            "eth.src.oui": "0",
+            "eth.src.oui_resolved": "Officially Xerox, but 0:0:0:0:0:0 is more common",
+            "eth.addr": "00:00:00:00:00:00",
+            "eth.addr_resolved": "00:00:00_00:00:00",
+            "eth.addr.oui": "0",
+            "eth.addr.oui_resolved": "Officially Xerox, but 0:0:0:0:0:0 is more common",
+            "eth.src.lg": "0",
+            "eth.lg": "0",
+            "eth.src.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.type": "0x0800"
+        },
+        "ip": {
+          "ip.version": "4",
+          "ip.hdr_len": "20",
+          "ip.dsfield": "0x00",
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp": "0",
+            "ip.dsfield.ecn": "0"
+          },
+          "ip.len": "246",
+          "ip.id": "0x34e8",
+          "ip.flags": "0x02",
+          "ip.flags_tree": {
+            "ip.flags.rb": "0",
+            "ip.flags.df": "1",
+            "ip.flags.mf": "0"
+          },
+          "ip.frag_offset": "0",
+          "ip.ttl": "64",
+          "ip.proto": "6",
+          "ip.checksum": "0x0718",
+          "ip.checksum.status": "2",
+          "ip.src": "127.0.0.1",
+          "ip.addr": "127.0.0.1",
+          "ip.src_host": "127.0.0.1",
+          "ip.host": "127.0.0.1",
+          "ip.dst": "127.0.0.1",
+          "ip.addr": "127.0.0.1",
+          "ip.dst_host": "127.0.0.1",
+          "ip.host": "127.0.0.1"
+        },
+        "tcp": {
+          "tcp.srcport": "60654",
+          "tcp.dstport": "9000",
+          "tcp.port": "60654",
+          "tcp.port": "9000",
+          "tcp.stream": "73",
+          "tcp.completeness": "31",
+          "tcp.len": "194",
+          "tcp.seq": "1",
+          "tcp.seq_raw": "2979162376",
+          "tcp.nxtseq": "195",
+          "tcp.ack": "1",
+          "tcp.ack_raw": "4036298050",
+          "tcp.hdr_len": "32",
+          "tcp.flags": "0x0018",
+          "tcp.flags_tree": {
+            "tcp.flags.res": "0",
+            "tcp.flags.ae": "0",
+            "tcp.flags.cwr": "0",
+            "tcp.flags.ece": "0",
+            "tcp.flags.urg": "0",
+            "tcp.flags.ack": "1",
+            "tcp.flags.push": "1",
+            "tcp.flags.reset": "0",
+            "tcp.flags.syn": "0",
+            "tcp.flags.fin": "0",
+            "tcp.flags.str": "·······AP···"
+          },
+          "tcp.window_size_value": "512",
+          "tcp.window_size": "65536",
+          "tcp.window_size_scalefactor": "128",
+          "tcp.checksum": "0xfeea",
+          "tcp.checksum.status": "2",
+          "tcp.urgent_pointer": "0",
+          "tcp.options": "01:01:08:0a:e8:a6:30:db:e8:a6:30:db",
+          "tcp.options_tree": {
+            "tcp.options.nop": "01",
+            "tcp.options.nop_tree": {
+              "tcp.option_kind": "1"
+            },
+            "tcp.options.nop": "01",
+            "tcp.options.nop_tree": {
+              "tcp.option_kind": "1"
+            },
+            "tcp.options.timestamp": "08:0a:e8:a6:30:db:e8:a6:30:db",
+            "tcp.options.timestamp_tree": {
+              "tcp.option_kind": "8",
+              "tcp.option_len": "10",
+              "tcp.options.timestamp.tsval": "3903205595",
+              "tcp.options.timestamp.tsecr": "3903205595"
+            }
+          },
+          "Timestamps": {
+            "tcp.time_relative": "0.000076000",
+            "tcp.time_delta": "0.000053000"
+          },
+          "tcp.analysis": {
+            "tcp.analysis.initial_rtt": "0.000023000",
+            "tcp.analysis.bytes_in_flight": "194",
+            "tcp.analysis.push_bytes_sent": "194"
+          },
+          "tcp.payload": "50:4f:53:54:20:2f:73:65:6e:64:20:48:54:54:50:2f:31:2e:31:0d:0a:48:6f:73:74:3a:20:6c:6f:63:61:6c:68:6f:73:74:3a:39:30:30:30:0d:0a:55:73:65:72:2d:41:67:65:6e:74:3a:20:63:75:72:6c:2f:38:2e:35:2e:30:0d:0a:41:63:63:65:70:74:3a:20:2a:2f:2a:0d:0a:43:6f:6e:74:65:6e:74:2d:4c:65:6e:67:74:68:3a:20:34:33:0d:0a:43:6f:6e:74:65:6e:74:2d:54:79:70:65:3a:20:61:70:70:6c:69:63:61:74:69:6f:6e:2f:78:2d:77:77:77:2d:66:6f:72:6d:2d:75:72:6c:65:6e:63:6f:64:65:64:0d:0a:0d:0a:43:68:61:72:6f:6e:20:56:49:3a:20:61:37:36:32:33:63:38:62:37:36:33:31:36:65:31:30:35:33:38:37:38:32:33:37:31:62:37:30:39:34:31:35"
+        },
+        "http": {
+          "POST /send HTTP/1.1\\r\\n": {
+            "_ws.expert": {
+              "http.chat": "",
+              "_ws.expert.message": "POST /send HTTP/1.1\\r\\n",
+              "_ws.expert.severity": "2097152",
+              "_ws.expert.group": "33554432"
+            },
+            "http.request.method": "POST",
+            "http.request.uri": "/send",
+            "http.request.version": "HTTP/1.1"
+          },
+          "http.host": "localhost:9000",
+          "http.request.line": "Host: localhost:9000\r\n",
+          "http.user_agent": "curl/8.5.0",
+          "http.request.line": "User-Agent: curl/8.5.0\r\n",
+          "http.accept": "*/*",
+          "http.request.line": "Accept: */*\r\n",
+          "http.content_length_header": "43",
+          "http.content_length_header_tree": {
+            "http.content_length": "43"
+          },
+          "http.request.line": "Content-Length: 43\r\n",
+          "http.content_type": "application/x-www-form-urlencoded",
+          "http.request.line": "Content-Type: application/x-www-form-urlencoded\r\n",
+          "\\r\\n": "",
+          "http.request.full_uri": "http://localhost:9000/send",
+          "http.request": "1",
+          "http.request_number": "1",
+          "http.response_in": "746",
+          "http.file_data": "Charon VI: a7623c8b76316e10538782371b709415"
+        },
+        "urlencoded-form": {
+          "Form item: \"Charon VI: a7623c8b76316e10538782371b709415\" = \"\"": {
+            "urlencoded-form.key": "Charon VI: a7623c8b76316e10538782371b709415",
+            "urlencoded-form.value": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2025-04-25",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.encap_type": "1",
+          "frame.time": "Apr 25, 2025 05:47:40.502357000 CDT",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1745574460.502357000",
+          "frame.time_delta": "0.000044000",
+          "frame.time_delta_displayed": "12.856512000",
+          "frame.time_relative": "1463.920622000",
+          "frame.number": "756",
+          "frame.len": "260",
+          "frame.cap_len": "260",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:ip:tcp:http:urlencoded-form",
+          "frame.coloring_rule.name": "HTTP",
+          "frame.coloring_rule.string": "http || tcp.port == 80 || http2"
+        },
+        "eth": {
+          "eth.dst": "00:00:00:00:00:00",
+          "eth.dst_tree": {
+            "eth.dst_resolved": "00:00:00_00:00:00",
+            "eth.dst.oui": "0",
+            "eth.dst.oui_resolved": "Officially Xerox, but 0:0:0:0:0:0 is more common",
+            "eth.addr": "00:00:00:00:00:00",
+            "eth.addr_resolved": "00:00:00_00:00:00",
+            "eth.addr.oui": "0",
+            "eth.addr.oui_resolved": "Officially Xerox, but 0:0:0:0:0:0 is more common",
+            "eth.dst.lg": "0",
+            "eth.lg": "0",
+            "eth.dst.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.src": "00:00:00:00:00:00",
+          "eth.src_tree": {
+            "eth.src_resolved": "00:00:00_00:00:00",
+            "eth.src.oui": "0",
+            "eth.src.oui_resolved": "Officially Xerox, but 0:0:0:0:0:0 is more common",
+            "eth.addr": "00:00:00:00:00:00",
+            "eth.addr_resolved": "00:00:00_00:00:00",
+            "eth.addr.oui": "0",
+            "eth.addr.oui_resolved": "Officially Xerox, but 0:0:0:0:0:0 is more common",
+            "eth.src.lg": "0",
+            "eth.lg": "0",
+            "eth.src.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.type": "0x0800"
+        },
+        "ip": {
+          "ip.version": "4",
+          "ip.hdr_len": "20",
+          "ip.dsfield": "0x00",
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp": "0",
+            "ip.dsfield.ecn": "0"
+          },
+          "ip.len": "246",
+          "ip.id": "0x0571",
+          "ip.flags": "0x02",
+          "ip.flags_tree": {
+            "ip.flags.rb": "0",
+            "ip.flags.df": "1",
+            "ip.flags.mf": "0"
+          },
+          "ip.frag_offset": "0",
+          "ip.ttl": "64",
+          "ip.proto": "6",
+          "ip.checksum": "0x368f",
+          "ip.checksum.status": "2",
+          "ip.src": "127.0.0.1",
+          "ip.addr": "127.0.0.1",
+          "ip.src_host": "127.0.0.1",
+          "ip.host": "127.0.0.1",
+          "ip.dst": "127.0.0.1",
+          "ip.addr": "127.0.0.1",
+          "ip.dst_host": "127.0.0.1",
+          "ip.host": "127.0.0.1"
+        },
+        "tcp": {
+          "tcp.srcport": "48180",
+          "tcp.dstport": "9000",
+          "tcp.port": "48180",
+          "tcp.port": "9000",
+          "tcp.stream": "75",
+          "tcp.completeness": "31",
+          "tcp.len": "194",
+          "tcp.seq": "1",
+          "tcp.seq_raw": "2925068562",
+          "tcp.nxtseq": "195",
+          "tcp.ack": "1",
+          "tcp.ack_raw": "2102332929",
+          "tcp.hdr_len": "32",
+          "tcp.flags": "0x0018",
+          "tcp.flags_tree": {
+            "tcp.flags.res": "0",
+            "tcp.flags.ae": "0",
+            "tcp.flags.cwr": "0",
+            "tcp.flags.ece": "0",
+            "tcp.flags.urg": "0",
+            "tcp.flags.ack": "1",
+            "tcp.flags.push": "1",
+            "tcp.flags.reset": "0",
+            "tcp.flags.syn": "0",
+            "tcp.flags.fin": "0",
+            "tcp.flags.str": "·······AP···"
+          },
+          "tcp.window_size_value": "512",
+          "tcp.window_size": "65536",
+          "tcp.window_size_scalefactor": "128",
+          "tcp.checksum": "0xfeea",
+          "tcp.checksum.status": "2",
+          "tcp.urgent_pointer": "0",
+          "tcp.options": "01:01:08:0a:e8:a6:63:13:e8:a6:63:13",
+          "tcp.options_tree": {
+            "tcp.options.nop": "01",
+            "tcp.options.nop_tree": {
+              "tcp.option_kind": "1"
+            },
+            "tcp.options.nop": "01",
+            "tcp.options.nop_tree": {
+              "tcp.option_kind": "1"
+            },
+            "tcp.options.timestamp": "08:0a:e8:a6:63:13:e8:a6:63:13",
+            "tcp.options.timestamp_tree": {
+              "tcp.option_kind": "8",
+              "tcp.option_len": "10",
+              "tcp.options.timestamp.tsval": "3903218451",
+              "tcp.options.timestamp.tsecr": "3903218451"
+            }
+          },
+          "Timestamps": {
+            "tcp.time_relative": "0.000067000",
+            "tcp.time_delta": "0.000044000"
+          },
+          "tcp.analysis": {
+            "tcp.analysis.initial_rtt": "0.000023000",
+            "tcp.analysis.bytes_in_flight": "194",
+            "tcp.analysis.push_bytes_sent": "194"
+          },
+          "tcp.payload": "50:4f:53:54:20:2f:73:65:6e:64:20:48:54:54:50:2f:31:2e:31:0d:0a:48:6f:73:74:3a:20:6c:6f:63:61:6c:68:6f:73:74:3a:39:30:30:30:0d:0a:55:73:65:72:2d:41:67:65:6e:74:3a:20:63:75:72:6c:2f:38:2e:35:2e:30:0d:0a:41:63:63:65:70:74:3a:20:2a:2f:2a:0d:0a:43:6f:6e:74:65:6e:74:2d:4c:65:6e:67:74:68:3a:20:34:33:0d:0a:43:6f:6e:74:65:6e:74:2d:54:79:70:65:3a:20:61:70:70:6c:69:63:61:74:69:6f:6e:2f:78:2d:77:77:77:2d:66:6f:72:6d:2d:75:72:6c:65:6e:63:6f:64:65:64:0d:0a:0d:0a:43:68:61:72:6f:6e:20:56:49:3a:20:63:36:63:63:61:34:32:31:38:30:63:61:62:61:31:37:65:39:65:36:38:38:32:64:63:36:36:63:63:36:65:65"
+        },
+        "http": {
+          "POST /send HTTP/1.1\\r\\n": {
+            "_ws.expert": {
+              "http.chat": "",
+              "_ws.expert.message": "POST /send HTTP/1.1\\r\\n",
+              "_ws.expert.severity": "2097152",
+              "_ws.expert.group": "33554432"
+            },
+            "http.request.method": "POST",
+            "http.request.uri": "/send",
+            "http.request.version": "HTTP/1.1"
+          },
+          "http.host": "localhost:9000",
+          "http.request.line": "Host: localhost:9000\r\n",
+          "http.user_agent": "curl/8.5.0",
+          "http.request.line": "User-Agent: curl/8.5.0\r\n",
+          "http.accept": "*/*",
+          "http.request.line": "Accept: */*\r\n",
+          "http.content_length_header": "43",
+          "http.content_length_header_tree": {
+            "http.content_length": "43"
+          },
+          "http.request.line": "Content-Length: 43\r\n",
+          "http.content_type": "application/x-www-form-urlencoded",
+          "http.request.line": "Content-Type: application/x-www-form-urlencoded\r\n",
+          "\\r\\n": "",
+          "http.request.full_uri": "http://localhost:9000/send",
+          "http.request": "1",
+          "http.request_number": "1",
+          "http.response_in": "760",
+          "http.file_data": "Charon VI: c6cca42180caba17e9e6882dc66cc6ee"
+        },
+        "urlencoded-form": {
+          "Form item: \"Charon VI: c6cca42180caba17e9e6882dc66cc6ee\" = \"\"": {
+            "urlencoded-form.key": "Charon VI: c6cca42180caba17e9e6882dc66cc6ee",
+            "urlencoded-form.value": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2025-04-25",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.encap_type": "1",
+          "frame.time": "Apr 25, 2025 05:47:54.958280000 CDT",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1745574474.958280000",
+          "frame.time_delta": "0.000056000",
+          "frame.time_delta_displayed": "14.455923000",
+          "frame.time_relative": "1478.376545000",
+          "frame.number": "770",
+          "frame.len": "260",
+          "frame.cap_len": "260",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:ip:tcp:http:urlencoded-form",
+          "frame.coloring_rule.name": "HTTP",
+          "frame.coloring_rule.string": "http || tcp.port == 80 || http2"
+        },
+        "eth": {
+          "eth.dst": "00:00:00:00:00:00",
+          "eth.dst_tree": {
+            "eth.dst_resolved": "00:00:00_00:00:00",
+            "eth.dst.oui": "0",
+            "eth.dst.oui_resolved": "Officially Xerox, but 0:0:0:0:0:0 is more common",
+            "eth.addr": "00:00:00:00:00:00",
+            "eth.addr_resolved": "00:00:00_00:00:00",
+            "eth.addr.oui": "0",
+            "eth.addr.oui_resolved": "Officially Xerox, but 0:0:0:0:0:0 is more common",
+            "eth.dst.lg": "0",
+            "eth.lg": "0",
+            "eth.dst.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.src": "00:00:00:00:00:00",
+          "eth.src_tree": {
+            "eth.src_resolved": "00:00:00_00:00:00",
+            "eth.src.oui": "0",
+            "eth.src.oui_resolved": "Officially Xerox, but 0:0:0:0:0:0 is more common",
+            "eth.addr": "00:00:00:00:00:00",
+            "eth.addr_resolved": "00:00:00_00:00:00",
+            "eth.addr.oui": "0",
+            "eth.addr.oui_resolved": "Officially Xerox, but 0:0:0:0:0:0 is more common",
+            "eth.src.lg": "0",
+            "eth.lg": "0",
+            "eth.src.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.type": "0x0800"
+        },
+        "ip": {
+          "ip.version": "4",
+          "ip.hdr_len": "20",
+          "ip.dsfield": "0x00",
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp": "0",
+            "ip.dsfield.ecn": "0"
+          },
+          "ip.len": "246",
+          "ip.id": "0x931d",
+          "ip.flags": "0x02",
+          "ip.flags_tree": {
+            "ip.flags.rb": "0",
+            "ip.flags.df": "1",
+            "ip.flags.mf": "0"
+          },
+          "ip.frag_offset": "0",
+          "ip.ttl": "64",
+          "ip.proto": "6",
+          "ip.checksum": "0xa8e2",
+          "ip.checksum.status": "2",
+          "ip.src": "127.0.0.1",
+          "ip.addr": "127.0.0.1",
+          "ip.src_host": "127.0.0.1",
+          "ip.host": "127.0.0.1",
+          "ip.dst": "127.0.0.1",
+          "ip.addr": "127.0.0.1",
+          "ip.dst_host": "127.0.0.1",
+          "ip.host": "127.0.0.1"
+        },
+        "tcp": {
+          "tcp.srcport": "44590",
+          "tcp.dstport": "9000",
+          "tcp.port": "44590",
+          "tcp.port": "9000",
+          "tcp.stream": "77",
+          "tcp.completeness": "31",
+          "tcp.len": "194",
+          "tcp.seq": "1",
+          "tcp.seq_raw": "2800072924",
+          "tcp.nxtseq": "195",
+          "tcp.ack": "1",
+          "tcp.ack_raw": "348034249",
+          "tcp.hdr_len": "32",
+          "tcp.flags": "0x0018",
+          "tcp.flags_tree": {
+            "tcp.flags.res": "0",
+            "tcp.flags.ae": "0",
+            "tcp.flags.cwr": "0",
+            "tcp.flags.ece": "0",
+            "tcp.flags.urg": "0",
+            "tcp.flags.ack": "1",
+            "tcp.flags.push": "1",
+            "tcp.flags.reset": "0",
+            "tcp.flags.syn": "0",
+            "tcp.flags.fin": "0",
+            "tcp.flags.str": "·······AP···"
+          },
+          "tcp.window_size_value": "512",
+          "tcp.window_size": "65536",
+          "tcp.window_size_scalefactor": "128",
+          "tcp.checksum": "0xfeea",
+          "tcp.checksum.status": "2",
+          "tcp.urgent_pointer": "0",
+          "tcp.options": "01:01:08:0a:e8:a6:9b:8b:e8:a6:9b:8b",
+          "tcp.options_tree": {
+            "tcp.options.nop": "01",
+            "tcp.options.nop_tree": {
+              "tcp.option_kind": "1"
+            },
+            "tcp.options.nop": "01",
+            "tcp.options.nop_tree": {
+              "tcp.option_kind": "1"
+            },
+            "tcp.options.timestamp": "08:0a:e8:a6:9b:8b:e8:a6:9b:8b",
+            "tcp.options.timestamp_tree": {
+              "tcp.option_kind": "8",
+              "tcp.option_len": "10",
+              "tcp.options.timestamp.tsval": "3903232907",
+              "tcp.options.timestamp.tsecr": "3903232907"
+            }
+          },
+          "Timestamps": {
+            "tcp.time_relative": "0.000083000",
+            "tcp.time_delta": "0.000056000"
+          },
+          "tcp.analysis": {
+            "tcp.analysis.initial_rtt": "0.000027000",
+            "tcp.analysis.bytes_in_flight": "194",
+            "tcp.analysis.push_bytes_sent": "194"
+          },
+          "tcp.payload": "50:4f:53:54:20:2f:73:65:6e:64:20:48:54:54:50:2f:31:2e:31:0d:0a:48:6f:73:74:3a:20:6c:6f:63:61:6c:68:6f:73:74:3a:39:30:30:30:0d:0a:55:73:65:72:2d:41:67:65:6e:74:3a:20:63:75:72:6c:2f:38:2e:35:2e:30:0d:0a:41:63:63:65:70:74:3a:20:2a:2f:2a:0d:0a:43:6f:6e:74:65:6e:74:2d:4c:65:6e:67:74:68:3a:20:34:33:0d:0a:43:6f:6e:74:65:6e:74:2d:54:79:70:65:3a:20:61:70:70:6c:69:63:61:74:69:6f:6e:2f:78:2d:77:77:77:2d:66:6f:72:6d:2d:75:72:6c:65:6e:63:6f:64:65:64:0d:0a:0d:0a:43:68:61:72:6f:6e:20:56:49:3a:20:37:63:38:35:34:39:30:30:65:34:36:65:62:63:35:65:65:35:36:38:30:30:33:32:62:33:65:33:33:34:64:65"
+        },
+        "http": {
+          "POST /send HTTP/1.1\\r\\n": {
+            "_ws.expert": {
+              "http.chat": "",
+              "_ws.expert.message": "POST /send HTTP/1.1\\r\\n",
+              "_ws.expert.severity": "2097152",
+              "_ws.expert.group": "33554432"
+            },
+            "http.request.method": "POST",
+            "http.request.uri": "/send",
+            "http.request.version": "HTTP/1.1"
+          },
+          "http.host": "localhost:9000",
+          "http.request.line": "Host: localhost:9000\r\n",
+          "http.user_agent": "curl/8.5.0",
+          "http.request.line": "User-Agent: curl/8.5.0\r\n",
+          "http.accept": "*/*",
+          "http.request.line": "Accept: */*\r\n",
+          "http.content_length_header": "43",
+          "http.content_length_header_tree": {
+            "http.content_length": "43"
+          },
+          "http.request.line": "Content-Length: 43\r\n",
+          "http.content_type": "application/x-www-form-urlencoded",
+          "http.request.line": "Content-Type: application/x-www-form-urlencoded\r\n",
+          "\\r\\n": "",
+          "http.request.full_uri": "http://localhost:9000/send",
+          "http.request": "1",
+          "http.request_number": "1",
+          "http.response_in": "774",
+          "http.file_data": "Charon VI: 7c854900e46ebc5ee5680032b3e334de"
+        },
+        "urlencoded-form": {
+          "Form item: \"Charon VI: 7c854900e46ebc5ee5680032b3e334de\" = \"\"": {
+            "urlencoded-form.key": "Charon VI: 7c854900e46ebc5ee5680032b3e334de",
+            "urlencoded-form.value": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2025-04-25",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.encap_type": "1",
+          "frame.time": "Apr 25, 2025 05:48:33.377452000 CDT",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1745574513.377452000",
+          "frame.time_delta": "0.000078000",
+          "frame.time_delta_displayed": "38.419172000",
+          "frame.time_relative": "1516.795717000",
+          "frame.number": "784",
+          "frame.len": "260",
+          "frame.cap_len": "260",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:ip:tcp:http:urlencoded-form",
+          "frame.coloring_rule.name": "HTTP",
+          "frame.coloring_rule.string": "http || tcp.port == 80 || http2"
+        },
+        "eth": {
+          "eth.dst": "00:00:00:00:00:00",
+          "eth.dst_tree": {
+            "eth.dst_resolved": "00:00:00_00:00:00",
+            "eth.dst.oui": "0",
+            "eth.dst.oui_resolved": "Officially Xerox, but 0:0:0:0:0:0 is more common",
+            "eth.addr": "00:00:00:00:00:00",
+            "eth.addr_resolved": "00:00:00_00:00:00",
+            "eth.addr.oui": "0",
+            "eth.addr.oui_resolved": "Officially Xerox, but 0:0:0:0:0:0 is more common",
+            "eth.dst.lg": "0",
+            "eth.lg": "0",
+            "eth.dst.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.src": "00:00:00:00:00:00",
+          "eth.src_tree": {
+            "eth.src_resolved": "00:00:00_00:00:00",
+            "eth.src.oui": "0",
+            "eth.src.oui_resolved": "Officially Xerox, but 0:0:0:0:0:0 is more common",
+            "eth.addr": "00:00:00:00:00:00",
+            "eth.addr_resolved": "00:00:00_00:00:00",
+            "eth.addr.oui": "0",
+            "eth.addr.oui_resolved": "Officially Xerox, but 0:0:0:0:0:0 is more common",
+            "eth.src.lg": "0",
+            "eth.lg": "0",
+            "eth.src.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.type": "0x0800"
+        },
+        "ip": {
+          "ip.version": "4",
+          "ip.hdr_len": "20",
+          "ip.dsfield": "0x00",
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp": "0",
+            "ip.dsfield.ecn": "0"
+          },
+          "ip.len": "246",
+          "ip.id": "0x1bbf",
+          "ip.flags": "0x02",
+          "ip.flags_tree": {
+            "ip.flags.rb": "0",
+            "ip.flags.df": "1",
+            "ip.flags.mf": "0"
+          },
+          "ip.frag_offset": "0",
+          "ip.ttl": "64",
+          "ip.proto": "6",
+          "ip.checksum": "0x2041",
+          "ip.checksum.status": "2",
+          "ip.src": "127.0.0.1",
+          "ip.addr": "127.0.0.1",
+          "ip.src_host": "127.0.0.1",
+          "ip.host": "127.0.0.1",
+          "ip.dst": "127.0.0.1",
+          "ip.addr": "127.0.0.1",
+          "ip.dst_host": "127.0.0.1",
+          "ip.host": "127.0.0.1"
+        },
+        "tcp": {
+          "tcp.srcport": "51136",
+          "tcp.dstport": "9000",
+          "tcp.port": "51136",
+          "tcp.port": "9000",
+          "tcp.stream": "79",
+          "tcp.completeness": "31",
+          "tcp.len": "194",
+          "tcp.seq": "1",
+          "tcp.seq_raw": "2347268483",
+          "tcp.nxtseq": "195",
+          "tcp.ack": "1",
+          "tcp.ack_raw": "2146895750",
+          "tcp.hdr_len": "32",
+          "tcp.flags": "0x0018",
+          "tcp.flags_tree": {
+            "tcp.flags.res": "0",
+            "tcp.flags.ae": "0",
+            "tcp.flags.cwr": "0",
+            "tcp.flags.ece": "0",
+            "tcp.flags.urg": "0",
+            "tcp.flags.ack": "1",
+            "tcp.flags.push": "1",
+            "tcp.flags.reset": "0",
+            "tcp.flags.syn": "0",
+            "tcp.flags.fin": "0",
+            "tcp.flags.str": "·······AP···"
+          },
+          "tcp.window_size_value": "512",
+          "tcp.window_size": "65536",
+          "tcp.window_size_scalefactor": "128",
+          "tcp.checksum": "0xfeea",
+          "tcp.checksum.status": "2",
+          "tcp.urgent_pointer": "0",
+          "tcp.options": "01:01:08:0a:e8:a7:31:9f:e8:a7:31:9e",
+          "tcp.options_tree": {
+            "tcp.options.nop": "01",
+            "tcp.options.nop_tree": {
+              "tcp.option_kind": "1"
+            },
+            "tcp.options.nop": "01",
+            "tcp.options.nop_tree": {
+              "tcp.option_kind": "1"
+            },
+            "tcp.options.timestamp": "08:0a:e8:a7:31:9f:e8:a7:31:9e",
+            "tcp.options.timestamp_tree": {
+              "tcp.option_kind": "8",
+              "tcp.option_len": "10",
+              "tcp.options.timestamp.tsval": "3903271327",
+              "tcp.options.timestamp.tsecr": "3903271326"
+            }
+          },
+          "Timestamps": {
+            "tcp.time_relative": "0.000104000",
+            "tcp.time_delta": "0.000078000"
+          },
+          "tcp.analysis": {
+            "tcp.analysis.initial_rtt": "0.000026000",
+            "tcp.analysis.bytes_in_flight": "194",
+            "tcp.analysis.push_bytes_sent": "194"
+          },
+          "tcp.payload": "50:4f:53:54:20:2f:73:65:6e:64:20:48:54:54:50:2f:31:2e:31:0d:0a:48:6f:73:74:3a:20:6c:6f:63:61:6c:68:6f:73:74:3a:39:30:30:30:0d:0a:55:73:65:72:2d:41:67:65:6e:74:3a:20:63:75:72:6c:2f:38:2e:35:2e:30:0d:0a:41:63:63:65:70:74:3a:20:2a:2f:2a:0d:0a:43:6f:6e:74:65:6e:74:2d:4c:65:6e:67:74:68:3a:20:34:33:0d:0a:43:6f:6e:74:65:6e:74:2d:54:79:70:65:3a:20:61:70:70:6c:69:63:61:74:69:6f:6e:2f:78:2d:77:77:77:2d:66:6f:72:6d:2d:75:72:6c:65:6e:63:6f:64:65:64:0d:0a:0d:0a:43:68:61:72:6f:6e:20:56:49:3a:20:61:63:38:31:38:38:32:62:38:34:38:62:37:36:37:33:64:37:33:37:37:37:63:61:32:32:39:30:38:63:30:64"
+        },
+        "http": {
+          "POST /send HTTP/1.1\\r\\n": {
+            "_ws.expert": {
+              "http.chat": "",
+              "_ws.expert.message": "POST /send HTTP/1.1\\r\\n",
+              "_ws.expert.severity": "2097152",
+              "_ws.expert.group": "33554432"
+            },
+            "http.request.method": "POST",
+            "http.request.uri": "/send",
+            "http.request.version": "HTTP/1.1"
+          },
+          "http.host": "localhost:9000",
+          "http.request.line": "Host: localhost:9000\r\n",
+          "http.user_agent": "curl/8.5.0",
+          "http.request.line": "User-Agent: curl/8.5.0\r\n",
+          "http.accept": "*/*",
+          "http.request.line": "Accept: */*\r\n",
+          "http.content_length_header": "43",
+          "http.content_length_header_tree": {
+            "http.content_length": "43"
+          },
+          "http.request.line": "Content-Length: 43\r\n",
+          "http.content_type": "application/x-www-form-urlencoded",
+          "http.request.line": "Content-Type: application/x-www-form-urlencoded\r\n",
+          "\\r\\n": "",
+          "http.request.full_uri": "http://localhost:9000/send",
+          "http.request": "1",
+          "http.request_number": "1",
+          "http.response_in": "788",
+          "http.file_data": "Charon VI: ac81882b848b7673d73777ca22908c0d"
+        },
+        "urlencoded-form": {
+          "Form item: \"Charon VI: ac81882b848b7673d73777ca22908c0d\" = \"\"": {
+            "urlencoded-form.key": "Charon VI: ac81882b848b7673d73777ca22908c0d",
+            "urlencoded-form.value": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2025-04-25",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.encap_type": "1",
+          "frame.time": "Apr 25, 2025 05:48:44.097383000 CDT",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1745574524.097383000",
+          "frame.time_delta": "0.000088000",
+          "frame.time_delta_displayed": "10.719931000",
+          "frame.time_relative": "1527.515648000",
+          "frame.number": "798",
+          "frame.len": "260",
+          "frame.cap_len": "260",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:ip:tcp:http:urlencoded-form",
+          "frame.coloring_rule.name": "HTTP",
+          "frame.coloring_rule.string": "http || tcp.port == 80 || http2"
+        },
+        "eth": {
+          "eth.dst": "00:00:00:00:00:00",
+          "eth.dst_tree": {
+            "eth.dst_resolved": "00:00:00_00:00:00",
+            "eth.dst.oui": "0",
+            "eth.dst.oui_resolved": "Officially Xerox, but 0:0:0:0:0:0 is more common",
+            "eth.addr": "00:00:00:00:00:00",
+            "eth.addr_resolved": "00:00:00_00:00:00",
+            "eth.addr.oui": "0",
+            "eth.addr.oui_resolved": "Officially Xerox, but 0:0:0:0:0:0 is more common",
+            "eth.dst.lg": "0",
+            "eth.lg": "0",
+            "eth.dst.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.src": "00:00:00:00:00:00",
+          "eth.src_tree": {
+            "eth.src_resolved": "00:00:00_00:00:00",
+            "eth.src.oui": "0",
+            "eth.src.oui_resolved": "Officially Xerox, but 0:0:0:0:0:0 is more common",
+            "eth.addr": "00:00:00:00:00:00",
+            "eth.addr_resolved": "00:00:00_00:00:00",
+            "eth.addr.oui": "0",
+            "eth.addr.oui_resolved": "Officially Xerox, but 0:0:0:0:0:0 is more common",
+            "eth.src.lg": "0",
+            "eth.lg": "0",
+            "eth.src.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.type": "0x0800"
+        },
+        "ip": {
+          "ip.version": "4",
+          "ip.hdr_len": "20",
+          "ip.dsfield": "0x00",
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp": "0",
+            "ip.dsfield.ecn": "0"
+          },
+          "ip.len": "246",
+          "ip.id": "0xbbeb",
+          "ip.flags": "0x02",
+          "ip.flags_tree": {
+            "ip.flags.rb": "0",
+            "ip.flags.df": "1",
+            "ip.flags.mf": "0"
+          },
+          "ip.frag_offset": "0",
+          "ip.ttl": "64",
+          "ip.proto": "6",
+          "ip.checksum": "0x8014",
+          "ip.checksum.status": "2",
+          "ip.src": "127.0.0.1",
+          "ip.addr": "127.0.0.1",
+          "ip.src_host": "127.0.0.1",
+          "ip.host": "127.0.0.1",
+          "ip.dst": "127.0.0.1",
+          "ip.addr": "127.0.0.1",
+          "ip.dst_host": "127.0.0.1",
+          "ip.host": "127.0.0.1"
+        },
+        "tcp": {
+          "tcp.srcport": "53752",
+          "tcp.dstport": "9000",
+          "tcp.port": "53752",
+          "tcp.port": "9000",
+          "tcp.stream": "81",
+          "tcp.completeness": "31",
+          "tcp.len": "194",
+          "tcp.seq": "1",
+          "tcp.seq_raw": "2364413024",
+          "tcp.nxtseq": "195",
+          "tcp.ack": "1",
+          "tcp.ack_raw": "1177663987",
+          "tcp.hdr_len": "32",
+          "tcp.flags": "0x0018",
+          "tcp.flags_tree": {
+            "tcp.flags.res": "0",
+            "tcp.flags.ae": "0",
+            "tcp.flags.cwr": "0",
+            "tcp.flags.ece": "0",
+            "tcp.flags.urg": "0",
+            "tcp.flags.ack": "1",
+            "tcp.flags.push": "1",
+            "tcp.flags.reset": "0",
+            "tcp.flags.syn": "0",
+            "tcp.flags.fin": "0",
+            "tcp.flags.str": "·······AP···"
+          },
+          "tcp.window_size_value": "512",
+          "tcp.window_size": "65536",
+          "tcp.window_size_scalefactor": "128",
+          "tcp.checksum": "0xfeea",
+          "tcp.checksum.status": "2",
+          "tcp.urgent_pointer": "0",
+          "tcp.options": "01:01:08:0a:e8:a7:5b:7e:e8:a7:5b:7e",
+          "tcp.options_tree": {
+            "tcp.options.nop": "01",
+            "tcp.options.nop_tree": {
+              "tcp.option_kind": "1"
+            },
+            "tcp.options.nop": "01",
+            "tcp.options.nop_tree": {
+              "tcp.option_kind": "1"
+            },
+            "tcp.options.timestamp": "08:0a:e8:a7:5b:7e:e8:a7:5b:7e",
+            "tcp.options.timestamp_tree": {
+              "tcp.option_kind": "8",
+              "tcp.option_len": "10",
+              "tcp.options.timestamp.tsval": "3903282046",
+              "tcp.options.timestamp.tsecr": "3903282046"
+            }
+          },
+          "Timestamps": {
+            "tcp.time_relative": "0.000132000",
+            "tcp.time_delta": "0.000088000"
+          },
+          "tcp.analysis": {
+            "tcp.analysis.initial_rtt": "0.000044000",
+            "tcp.analysis.bytes_in_flight": "194",
+            "tcp.analysis.push_bytes_sent": "194"
+          },
+          "tcp.payload": "50:4f:53:54:20:2f:73:65:6e:64:20:48:54:54:50:2f:31:2e:31:0d:0a:48:6f:73:74:3a:20:6c:6f:63:61:6c:68:6f:73:74:3a:39:30:30:30:0d:0a:55:73:65:72:2d:41:67:65:6e:74:3a:20:63:75:72:6c:2f:38:2e:35:2e:30:0d:0a:41:63:63:65:70:74:3a:20:2a:2f:2a:0d:0a:43:6f:6e:74:65:6e:74:2d:4c:65:6e:67:74:68:3a:20:34:33:0d:0a:43:6f:6e:74:65:6e:74:2d:54:79:70:65:3a:20:61:70:70:6c:69:63:61:74:69:6f:6e:2f:78:2d:77:77:77:2d:66:6f:72:6d:2d:75:72:6c:65:6e:63:6f:64:65:64:0d:0a:0d:0a:43:68:61:72:6f:6e:20:56:49:3a:20:34:63:65:39:37:64:36:37:39:36:33:65:64:63:61:35:35:63:64:64:32:31:64:34:36:61:36:38:66:35:62:62"
+        },
+        "http": {
+          "POST /send HTTP/1.1\\r\\n": {
+            "_ws.expert": {
+              "http.chat": "",
+              "_ws.expert.message": "POST /send HTTP/1.1\\r\\n",
+              "_ws.expert.severity": "2097152",
+              "_ws.expert.group": "33554432"
+            },
+            "http.request.method": "POST",
+            "http.request.uri": "/send",
+            "http.request.version": "HTTP/1.1"
+          },
+          "http.host": "localhost:9000",
+          "http.request.line": "Host: localhost:9000\r\n",
+          "http.user_agent": "curl/8.5.0",
+          "http.request.line": "User-Agent: curl/8.5.0\r\n",
+          "http.accept": "*/*",
+          "http.request.line": "Accept: */*\r\n",
+          "http.content_length_header": "43",
+          "http.content_length_header_tree": {
+            "http.content_length": "43"
+          },
+          "http.request.line": "Content-Length: 43\r\n",
+          "http.content_type": "application/x-www-form-urlencoded",
+          "http.request.line": "Content-Type: application/x-www-form-urlencoded\r\n",
+          "\\r\\n": "",
+          "http.request.full_uri": "http://localhost:9000/send",
+          "http.request": "1",
+          "http.request_number": "1",
+          "http.response_in": "802",
+          "http.file_data": "Charon VI: 4ce97d67963edca55cdd21d46a68f5bb"
+        },
+        "urlencoded-form": {
+          "Form item: \"Charon VI: 4ce97d67963edca55cdd21d46a68f5bb\" = \"\"": {
+            "urlencoded-form.key": "Charon VI: 4ce97d67963edca55cdd21d46a68f5bb",
+            "urlencoded-form.value": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2025-04-25",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.encap_type": "1",
+          "frame.time": "Apr 25, 2025 05:48:55.327859000 CDT",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1745574535.327859000",
+          "frame.time_delta": "0.000049000",
+          "frame.time_delta_displayed": "11.230476000",
+          "frame.time_relative": "1538.746124000",
+          "frame.number": "812",
+          "frame.len": "260",
+          "frame.cap_len": "260",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:ip:tcp:http:urlencoded-form",
+          "frame.coloring_rule.name": "HTTP",
+          "frame.coloring_rule.string": "http || tcp.port == 80 || http2"
+        },
+        "eth": {
+          "eth.dst": "00:00:00:00:00:00",
+          "eth.dst_tree": {
+            "eth.dst_resolved": "00:00:00_00:00:00",
+            "eth.dst.oui": "0",
+            "eth.dst.oui_resolved": "Officially Xerox, but 0:0:0:0:0:0 is more common",
+            "eth.addr": "00:00:00:00:00:00",
+            "eth.addr_resolved": "00:00:00_00:00:00",
+            "eth.addr.oui": "0",
+            "eth.addr.oui_resolved": "Officially Xerox, but 0:0:0:0:0:0 is more common",
+            "eth.dst.lg": "0",
+            "eth.lg": "0",
+            "eth.dst.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.src": "00:00:00:00:00:00",
+          "eth.src_tree": {
+            "eth.src_resolved": "00:00:00_00:00:00",
+            "eth.src.oui": "0",
+            "eth.src.oui_resolved": "Officially Xerox, but 0:0:0:0:0:0 is more common",
+            "eth.addr": "00:00:00:00:00:00",
+            "eth.addr_resolved": "00:00:00_00:00:00",
+            "eth.addr.oui": "0",
+            "eth.addr.oui_resolved": "Officially Xerox, but 0:0:0:0:0:0 is more common",
+            "eth.src.lg": "0",
+            "eth.lg": "0",
+            "eth.src.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.type": "0x0800"
+        },
+        "ip": {
+          "ip.version": "4",
+          "ip.hdr_len": "20",
+          "ip.dsfield": "0x00",
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp": "0",
+            "ip.dsfield.ecn": "0"
+          },
+          "ip.len": "246",
+          "ip.id": "0xc683",
+          "ip.flags": "0x02",
+          "ip.flags_tree": {
+            "ip.flags.rb": "0",
+            "ip.flags.df": "1",
+            "ip.flags.mf": "0"
+          },
+          "ip.frag_offset": "0",
+          "ip.ttl": "64",
+          "ip.proto": "6",
+          "ip.checksum": "0x757c",
+          "ip.checksum.status": "2",
+          "ip.src": "127.0.0.1",
+          "ip.addr": "127.0.0.1",
+          "ip.src_host": "127.0.0.1",
+          "ip.host": "127.0.0.1",
+          "ip.dst": "127.0.0.1",
+          "ip.addr": "127.0.0.1",
+          "ip.dst_host": "127.0.0.1",
+          "ip.host": "127.0.0.1"
+        },
+        "tcp": {
+          "tcp.srcport": "38880",
+          "tcp.dstport": "9000",
+          "tcp.port": "38880",
+          "tcp.port": "9000",
+          "tcp.stream": "83",
+          "tcp.completeness": "31",
+          "tcp.len": "194",
+          "tcp.seq": "1",
+          "tcp.seq_raw": "1997298394",
+          "tcp.nxtseq": "195",
+          "tcp.ack": "1",
+          "tcp.ack_raw": "122806866",
+          "tcp.hdr_len": "32",
+          "tcp.flags": "0x0018",
+          "tcp.flags_tree": {
+            "tcp.flags.res": "0",
+            "tcp.flags.ae": "0",
+            "tcp.flags.cwr": "0",
+            "tcp.flags.ece": "0",
+            "tcp.flags.urg": "0",
+            "tcp.flags.ack": "1",
+            "tcp.flags.push": "1",
+            "tcp.flags.reset": "0",
+            "tcp.flags.syn": "0",
+            "tcp.flags.fin": "0",
+            "tcp.flags.str": "·······AP···"
+          },
+          "tcp.window_size_value": "512",
+          "tcp.window_size": "65536",
+          "tcp.window_size_scalefactor": "128",
+          "tcp.checksum": "0xfeea",
+          "tcp.checksum.status": "2",
+          "tcp.urgent_pointer": "0",
+          "tcp.options": "01:01:08:0a:e8:a7:87:5d:e8:a7:87:5d",
+          "tcp.options_tree": {
+            "tcp.options.nop": "01",
+            "tcp.options.nop_tree": {
+              "tcp.option_kind": "1"
+            },
+            "tcp.options.nop": "01",
+            "tcp.options.nop_tree": {
+              "tcp.option_kind": "1"
+            },
+            "tcp.options.timestamp": "08:0a:e8:a7:87:5d:e8:a7:87:5d",
+            "tcp.options.timestamp_tree": {
+              "tcp.option_kind": "8",
+              "tcp.option_len": "10",
+              "tcp.options.timestamp.tsval": "3903293277",
+              "tcp.options.timestamp.tsecr": "3903293277"
+            }
+          },
+          "Timestamps": {
+            "tcp.time_relative": "0.000072000",
+            "tcp.time_delta": "0.000049000"
+          },
+          "tcp.analysis": {
+            "tcp.analysis.initial_rtt": "0.000023000",
+            "tcp.analysis.bytes_in_flight": "194",
+            "tcp.analysis.push_bytes_sent": "194"
+          },
+          "tcp.payload": "50:4f:53:54:20:2f:73:65:6e:64:20:48:54:54:50:2f:31:2e:31:0d:0a:48:6f:73:74:3a:20:6c:6f:63:61:6c:68:6f:73:74:3a:39:30:30:30:0d:0a:55:73:65:72:2d:41:67:65:6e:74:3a:20:63:75:72:6c:2f:38:2e:35:2e:30:0d:0a:41:63:63:65:70:74:3a:20:2a:2f:2a:0d:0a:43:6f:6e:74:65:6e:74:2d:4c:65:6e:67:74:68:3a:20:34:33:0d:0a:43:6f:6e:74:65:6e:74:2d:54:79:70:65:3a:20:61:70:70:6c:69:63:61:74:69:6f:6e:2f:78:2d:77:77:77:2d:66:6f:72:6d:2d:75:72:6c:65:6e:63:6f:64:65:64:0d:0a:0d:0a:43:68:61:72:6f:6e:20:56:49:3a:20:34:61:62:62:36:32:61:30:30:62:63:63:62:37:37:35:33:32:31:66:32:37:32:30:66:32:63:37:37:35:30:62"
+        },
+        "http": {
+          "POST /send HTTP/1.1\\r\\n": {
+            "_ws.expert": {
+              "http.chat": "",
+              "_ws.expert.message": "POST /send HTTP/1.1\\r\\n",
+              "_ws.expert.severity": "2097152",
+              "_ws.expert.group": "33554432"
+            },
+            "http.request.method": "POST",
+            "http.request.uri": "/send",
+            "http.request.version": "HTTP/1.1"
+          },
+          "http.host": "localhost:9000",
+          "http.request.line": "Host: localhost:9000\r\n",
+          "http.user_agent": "curl/8.5.0",
+          "http.request.line": "User-Agent: curl/8.5.0\r\n",
+          "http.accept": "*/*",
+          "http.request.line": "Accept: */*\r\n",
+          "http.content_length_header": "43",
+          "http.content_length_header_tree": {
+            "http.content_length": "43"
+          },
+          "http.request.line": "Content-Length: 43\r\n",
+          "http.content_type": "application/x-www-form-urlencoded",
+          "http.request.line": "Content-Type: application/x-www-form-urlencoded\r\n",
+          "\\r\\n": "",
+          "http.request.full_uri": "http://localhost:9000/send",
+          "http.request": "1",
+          "http.request_number": "1",
+          "http.response_in": "816",
+          "http.file_data": "Charon VI: 4abb62a00bccb775321f2720f2c7750b"
+        },
+        "urlencoded-form": {
+          "Form item: \"Charon VI: 4abb62a00bccb775321f2720f2c7750b\" = \"\"": {
+            "urlencoded-form.key": "Charon VI: 4abb62a00bccb775321f2720f2c7750b",
+            "urlencoded-form.value": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2025-04-25",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.encap_type": "1",
+          "frame.time": "Apr 25, 2025 05:49:09.423430000 CDT",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1745574549.423430000",
+          "frame.time_delta": "0.000051000",
+          "frame.time_delta_displayed": "14.095571000",
+          "frame.time_relative": "1552.841695000",
+          "frame.number": "826",
+          "frame.len": "260",
+          "frame.cap_len": "260",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:ip:tcp:http:urlencoded-form",
+          "frame.coloring_rule.name": "HTTP",
+          "frame.coloring_rule.string": "http || tcp.port == 80 || http2"
+        },
+        "eth": {
+          "eth.dst": "00:00:00:00:00:00",
+          "eth.dst_tree": {
+            "eth.dst_resolved": "00:00:00_00:00:00",
+            "eth.dst.oui": "0",
+            "eth.dst.oui_resolved": "Officially Xerox, but 0:0:0:0:0:0 is more common",
+            "eth.addr": "00:00:00:00:00:00",
+            "eth.addr_resolved": "00:00:00_00:00:00",
+            "eth.addr.oui": "0",
+            "eth.addr.oui_resolved": "Officially Xerox, but 0:0:0:0:0:0 is more common",
+            "eth.dst.lg": "0",
+            "eth.lg": "0",
+            "eth.dst.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.src": "00:00:00:00:00:00",
+          "eth.src_tree": {
+            "eth.src_resolved": "00:00:00_00:00:00",
+            "eth.src.oui": "0",
+            "eth.src.oui_resolved": "Officially Xerox, but 0:0:0:0:0:0 is more common",
+            "eth.addr": "00:00:00:00:00:00",
+            "eth.addr_resolved": "00:00:00_00:00:00",
+            "eth.addr.oui": "0",
+            "eth.addr.oui_resolved": "Officially Xerox, but 0:0:0:0:0:0 is more common",
+            "eth.src.lg": "0",
+            "eth.lg": "0",
+            "eth.src.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.type": "0x0800"
+        },
+        "ip": {
+          "ip.version": "4",
+          "ip.hdr_len": "20",
+          "ip.dsfield": "0x00",
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp": "0",
+            "ip.dsfield.ecn": "0"
+          },
+          "ip.len": "246",
+          "ip.id": "0x8491",
+          "ip.flags": "0x02",
+          "ip.flags_tree": {
+            "ip.flags.rb": "0",
+            "ip.flags.df": "1",
+            "ip.flags.mf": "0"
+          },
+          "ip.frag_offset": "0",
+          "ip.ttl": "64",
+          "ip.proto": "6",
+          "ip.checksum": "0xb76e",
+          "ip.checksum.status": "2",
+          "ip.src": "127.0.0.1",
+          "ip.addr": "127.0.0.1",
+          "ip.src_host": "127.0.0.1",
+          "ip.host": "127.0.0.1",
+          "ip.dst": "127.0.0.1",
+          "ip.addr": "127.0.0.1",
+          "ip.dst_host": "127.0.0.1",
+          "ip.host": "127.0.0.1"
+        },
+        "tcp": {
+          "tcp.srcport": "33052",
+          "tcp.dstport": "9000",
+          "tcp.port": "33052",
+          "tcp.port": "9000",
+          "tcp.stream": "85",
+          "tcp.completeness": "31",
+          "tcp.len": "194",
+          "tcp.seq": "1",
+          "tcp.seq_raw": "1825094435",
+          "tcp.nxtseq": "195",
+          "tcp.ack": "1",
+          "tcp.ack_raw": "4005788001",
+          "tcp.hdr_len": "32",
+          "tcp.flags": "0x0018",
+          "tcp.flags_tree": {
+            "tcp.flags.res": "0",
+            "tcp.flags.ae": "0",
+            "tcp.flags.cwr": "0",
+            "tcp.flags.ece": "0",
+            "tcp.flags.urg": "0",
+            "tcp.flags.ack": "1",
+            "tcp.flags.push": "1",
+            "tcp.flags.reset": "0",
+            "tcp.flags.syn": "0",
+            "tcp.flags.fin": "0",
+            "tcp.flags.str": "·······AP···"
+          },
+          "tcp.window_size_value": "512",
+          "tcp.window_size": "65536",
+          "tcp.window_size_scalefactor": "128",
+          "tcp.checksum": "0xfeea",
+          "tcp.checksum.status": "2",
+          "tcp.urgent_pointer": "0",
+          "tcp.options": "01:01:08:0a:e8:a7:be:6d:e8:a7:be:6c",
+          "tcp.options_tree": {
+            "tcp.options.nop": "01",
+            "tcp.options.nop_tree": {
+              "tcp.option_kind": "1"
+            },
+            "tcp.options.nop": "01",
+            "tcp.options.nop_tree": {
+              "tcp.option_kind": "1"
+            },
+            "tcp.options.timestamp": "08:0a:e8:a7:be:6d:e8:a7:be:6c",
+            "tcp.options.timestamp_tree": {
+              "tcp.option_kind": "8",
+              "tcp.option_len": "10",
+              "tcp.options.timestamp.tsval": "3903307373",
+              "tcp.options.timestamp.tsecr": "3903307372"
+            }
+          },
+          "Timestamps": {
+            "tcp.time_relative": "0.000070000",
+            "tcp.time_delta": "0.000051000"
+          },
+          "tcp.analysis": {
+            "tcp.analysis.initial_rtt": "0.000019000",
+            "tcp.analysis.bytes_in_flight": "194",
+            "tcp.analysis.push_bytes_sent": "194"
+          },
+          "tcp.payload": "50:4f:53:54:20:2f:73:65:6e:64:20:48:54:54:50:2f:31:2e:31:0d:0a:48:6f:73:74:3a:20:6c:6f:63:61:6c:68:6f:73:74:3a:39:30:30:30:0d:0a:55:73:65:72:2d:41:67:65:6e:74:3a:20:63:75:72:6c:2f:38:2e:35:2e:30:0d:0a:41:63:63:65:70:74:3a:20:2a:2f:2a:0d:0a:43:6f:6e:74:65:6e:74:2d:4c:65:6e:67:74:68:3a:20:34:33:0d:0a:43:6f:6e:74:65:6e:74:2d:54:79:70:65:3a:20:61:70:70:6c:69:63:61:74:69:6f:6e:2f:78:2d:77:77:77:2d:66:6f:72:6d:2d:75:72:6c:65:6e:63:6f:64:65:64:0d:0a:0d:0a:43:68:61:72:6f:6e:20:56:49:3a:20:36:37:65:30:30:65:38:65:66:37:33:38:66:65:37:35:61:66:64:62:34:32:62:32:32:65:35:30:33:37:31:65"
+        },
+        "http": {
+          "POST /send HTTP/1.1\\r\\n": {
+            "_ws.expert": {
+              "http.chat": "",
+              "_ws.expert.message": "POST /send HTTP/1.1\\r\\n",
+              "_ws.expert.severity": "2097152",
+              "_ws.expert.group": "33554432"
+            },
+            "http.request.method": "POST",
+            "http.request.uri": "/send",
+            "http.request.version": "HTTP/1.1"
+          },
+          "http.host": "localhost:9000",
+          "http.request.line": "Host: localhost:9000\r\n",
+          "http.user_agent": "curl/8.5.0",
+          "http.request.line": "User-Agent: curl/8.5.0\r\n",
+          "http.accept": "*/*",
+          "http.request.line": "Accept: */*\r\n",
+          "http.content_length_header": "43",
+          "http.content_length_header_tree": {
+            "http.content_length": "43"
+          },
+          "http.request.line": "Content-Length: 43\r\n",
+          "http.content_type": "application/x-www-form-urlencoded",
+          "http.request.line": "Content-Type: application/x-www-form-urlencoded\r\n",
+          "\\r\\n": "",
+          "http.request.full_uri": "http://localhost:9000/send",
+          "http.request": "1",
+          "http.request_number": "1",
+          "http.response_in": "830",
+          "http.file_data": "Charon VI: 67e00e8ef738fe75afdb42b22e50371e"
+        },
+        "urlencoded-form": {
+          "Form item: \"Charon VI: 67e00e8ef738fe75afdb42b22e50371e\" = \"\"": {
+            "urlencoded-form.key": "Charon VI: 67e00e8ef738fe75afdb42b22e50371e",
+            "urlencoded-form.value": ""
+          }
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2025-04-25",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.encap_type": "1",
+          "frame.time": "Apr 25, 2025 05:49:22.204924000 CDT",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1745574562.204924000",
+          "frame.time_delta": "0.000067000",
+          "frame.time_delta_displayed": "12.781494000",
+          "frame.time_relative": "1565.623189000",
+          "frame.number": "840",
+          "frame.len": "260",
+          "frame.cap_len": "260",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:ip:tcp:http:urlencoded-form",
+          "frame.coloring_rule.name": "HTTP",
+          "frame.coloring_rule.string": "http || tcp.port == 80 || http2"
+        },
+        "eth": {
+          "eth.dst": "00:00:00:00:00:00",
+          "eth.dst_tree": {
+            "eth.dst_resolved": "00:00:00_00:00:00",
+            "eth.dst.oui": "0",
+            "eth.dst.oui_resolved": "Officially Xerox, but 0:0:0:0:0:0 is more common",
+            "eth.addr": "00:00:00:00:00:00",
+            "eth.addr_resolved": "00:00:00_00:00:00",
+            "eth.addr.oui": "0",
+            "eth.addr.oui_resolved": "Officially Xerox, but 0:0:0:0:0:0 is more common",
+            "eth.dst.lg": "0",
+            "eth.lg": "0",
+            "eth.dst.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.src": "00:00:00:00:00:00",
+          "eth.src_tree": {
+            "eth.src_resolved": "00:00:00_00:00:00",
+            "eth.src.oui": "0",
+            "eth.src.oui_resolved": "Officially Xerox, but 0:0:0:0:0:0 is more common",
+            "eth.addr": "00:00:00:00:00:00",
+            "eth.addr_resolved": "00:00:00_00:00:00",
+            "eth.addr.oui": "0",
+            "eth.addr.oui_resolved": "Officially Xerox, but 0:0:0:0:0:0 is more common",
+            "eth.src.lg": "0",
+            "eth.lg": "0",
+            "eth.src.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.type": "0x0800"
+        },
+        "ip": {
+          "ip.version": "4",
+          "ip.hdr_len": "20",
+          "ip.dsfield": "0x00",
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp": "0",
+            "ip.dsfield.ecn": "0"
+          },
+          "ip.len": "246",
+          "ip.id": "0x3ba1",
+          "ip.flags": "0x02",
+          "ip.flags_tree": {
+            "ip.flags.rb": "0",
+            "ip.flags.df": "1",
+            "ip.flags.mf": "0"
+          },
+          "ip.frag_offset": "0",
+          "ip.ttl": "64",
+          "ip.proto": "6",
+          "ip.checksum": "0x005f",
+          "ip.checksum.status": "2",
+          "ip.src": "127.0.0.1",
+          "ip.addr": "127.0.0.1",
+          "ip.src_host": "127.0.0.1",
+          "ip.host": "127.0.0.1",
+          "ip.dst": "127.0.0.1",
+          "ip.addr": "127.0.0.1",
+          "ip.dst_host": "127.0.0.1",
+          "ip.host": "127.0.0.1"
+        },
+        "tcp": {
+          "tcp.srcport": "37580",
+          "tcp.dstport": "9000",
+          "tcp.port": "37580",
+          "tcp.port": "9000",
+          "tcp.stream": "87",
+          "tcp.completeness": "31",
+          "tcp.len": "194",
+          "tcp.seq": "1",
+          "tcp.seq_raw": "481251185",
+          "tcp.nxtseq": "195",
+          "tcp.ack": "1",
+          "tcp.ack_raw": "320875844",
+          "tcp.hdr_len": "32",
+          "tcp.flags": "0x0018",
+          "tcp.flags_tree": {
+            "tcp.flags.res": "0",
+            "tcp.flags.ae": "0",
+            "tcp.flags.cwr": "0",
+            "tcp.flags.ece": "0",
+            "tcp.flags.urg": "0",
+            "tcp.flags.ack": "1",
+            "tcp.flags.push": "1",
+            "tcp.flags.reset": "0",
+            "tcp.flags.syn": "0",
+            "tcp.flags.fin": "0",
+            "tcp.flags.str": "·······AP···"
+          },
+          "tcp.window_size_value": "512",
+          "tcp.window_size": "65536",
+          "tcp.window_size_scalefactor": "128",
+          "tcp.checksum": "0xfeea",
+          "tcp.checksum.status": "2",
+          "tcp.urgent_pointer": "0",
+          "tcp.options": "01:01:08:0a:e8:a7:f0:5a:e8:a7:f0:5a",
+          "tcp.options_tree": {
+            "tcp.options.nop": "01",
+            "tcp.options.nop_tree": {
+              "tcp.option_kind": "1"
+            },
+            "tcp.options.nop": "01",
+            "tcp.options.nop_tree": {
+              "tcp.option_kind": "1"
+            },
+            "tcp.options.timestamp": "08:0a:e8:a7:f0:5a:e8:a7:f0:5a",
+            "tcp.options.timestamp_tree": {
+              "tcp.option_kind": "8",
+              "tcp.option_len": "10",
+              "tcp.options.timestamp.tsval": "3903320154",
+              "tcp.options.timestamp.tsecr": "3903320154"
+            }
+          },
+          "Timestamps": {
+            "tcp.time_relative": "0.000092000",
+            "tcp.time_delta": "0.000067000"
+          },
+          "tcp.analysis": {
+            "tcp.analysis.initial_rtt": "0.000025000",
+            "tcp.analysis.bytes_in_flight": "194",
+            "tcp.analysis.push_bytes_sent": "194"
+          },
+          "tcp.payload": "50:4f:53:54:20:2f:73:65:6e:64:20:48:54:54:50:2f:31:2e:31:0d:0a:48:6f:73:74:3a:20:6c:6f:63:61:6c:68:6f:73:74:3a:39:30:30:30:0d:0a:55:73:65:72:2d:41:67:65:6e:74:3a:20:63:75:72:6c:2f:38:2e:35:2e:30:0d:0a:41:63:63:65:70:74:3a:20:2a:2f:2a:0d:0a:43:6f:6e:74:65:6e:74:2d:4c:65:6e:67:74:68:3a:20:34:33:0d:0a:43:6f:6e:74:65:6e:74:2d:54:79:70:65:3a:20:61:70:70:6c:69:63:61:74:69:6f:6e:2f:78:2d:77:77:77:2d:66:6f:72:6d:2d:75:72:6c:65:6e:63:6f:64:65:64:0d:0a:0d:0a:43:68:61:72:6f:6e:20:56:49:3a:20:62:35:36:31:30:35:32:65:35:36:39:37:65:65:35:66:31:34:39:31:62:35:65:33:35:30:66:62:37:38:65:31"
+        },
+        "http": {
+          "POST /send HTTP/1.1\\r\\n": {
+            "_ws.expert": {
+              "http.chat": "",
+              "_ws.expert.message": "POST /send HTTP/1.1\\r\\n",
+              "_ws.expert.severity": "2097152",
+              "_ws.expert.group": "33554432"
+            },
+            "http.request.method": "POST",
+            "http.request.uri": "/send",
+            "http.request.version": "HTTP/1.1"
+          },
+          "http.host": "localhost:9000",
+          "http.request.line": "Host: localhost:9000\r\n",
+          "http.user_agent": "curl/8.5.0",
+          "http.request.line": "User-Agent: curl/8.5.0\r\n",
+          "http.accept": "*/*",
+          "http.request.line": "Accept: */*\r\n",
+          "http.content_length_header": "43",
+          "http.content_length_header_tree": {
+            "http.content_length": "43"
+          },
+          "http.request.line": "Content-Length: 43\r\n",
+          "http.content_type": "application/x-www-form-urlencoded",
+          "http.request.line": "Content-Type: application/x-www-form-urlencoded\r\n",
+          "\\r\\n": "",
+          "http.request.full_uri": "http://localhost:9000/send",
+          "http.request": "1",
+          "http.request_number": "1",
+          "http.response_in": "844",
+          "http.file_data": "Charon VI: b561052e5697ee5f1491b5e350fb78e1"
+        },
+        "urlencoded-form": {
+          "Form item: \"Charon VI: b561052e5697ee5f1491b5e350fb78e1\" = \"\"": {
+            "urlencoded-form.key": "Charon VI: b561052e5697ee5f1491b5e350fb78e1",
+            "urlencoded-form.value": ""
+          }
+        }
+      }
+    }
+  }
+]
